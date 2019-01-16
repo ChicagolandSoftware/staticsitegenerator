@@ -8,6 +8,8 @@
 #!/usr/bin/env python3
 import time
 import os
+import sys
+import json
 
 
 def main():
@@ -23,6 +25,12 @@ def main():
     # need to use regular expressions for checking argv
     # and also just for the project name stuff, and other
     # general user input
+
+    # I should make multiple classes: one project class,
+    # and each project class object has multiple other classes
+    # one about_page class, multiple article classes, and some
+    # other properties, like social media links and the site name etc
+    # use json
     print("Please do NOT quit by closing the window or hitting ctrl+c.")
     time.sleep(2)
     print("You can cause problems by quitting abruptly without finishing things.")
