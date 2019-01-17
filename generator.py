@@ -11,6 +11,11 @@ import os
 import sys
 import json
 
+# count.txt just has the number of all the articles
+# articles.txt file to keep track of all the article names, which correspond
+# to the filenames, which should be used with the find-and-replace stuff
+# loop through all the
+
 
 def main():
     # TO-DO: if command line argument is passed to generator,

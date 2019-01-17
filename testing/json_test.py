@@ -11,6 +11,10 @@
 
 
 # first section of this file: writing JSON
+
+
+
+
 book = {}
 book['alan'] = {
     'name': 'alan',
@@ -22,13 +26,39 @@ book['alice'] = {
     'address': '456 blue street',
     'phone': 123123123
 }
-import json
-some_string = json.dumps(book)
-print(some_string)
-with open("c://data/book.txt","w") as f:
-    f.write(some_string)
-    print("got here")
 
+# count.txt just has the number of all the articles
+# articles.txt file to keep track of all the article names, which correspond
+# to the filenames, which should be used with the find-and-replace stuff
+# loop through all the
+
+
+import json
+
+# the below stuff should be used in the actual generator.py for when the user wants to
+# make a new article
+article = {}
+article['title'] = input('Enter a title for the article: ')
+article['author'] = input('Enter an author for the article: ')
+article['date'] = input('Enter a date for the article (MM/DD/YYYY): ')
+article['first_sentence'] = input('Enter the first sentence for the article: ')
+article['body text'] = input('Enter the body text of the article (can\'t handle linebreaks yet: ')
+article['lead_image'] = input('Enter the filename of the lead image (and put it in the images subfolder): ')
+some_string = json.dumps(article)
+print(some_string)
+filename = input("Enter the filename (which will also be the URL, such as example.com/filename.html): ")
+with open(filename + ".json","w") as json_file:
+    json_file.write(some_string)
+    print("wrote to file" + filename)
+json_file.close()
+
+
+# import json
+# some_string = json.dumps(book)
+# print(some_string)
+# with open("c://data/book.txt","w") as f:
+#     f.write(some_string)
+#     print("got here")
 
 
 # second part of this file:
