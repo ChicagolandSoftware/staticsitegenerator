@@ -2,15 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/template/project_template/article_json/example_article.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/project_template/page_json/index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/json_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_site_generator_mockups/about screen002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_site_generator_mockups/main screen001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static_site_generator_mockups/website screen003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/article_json/example_article.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/example_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/example_article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/page_json/index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/page_json/order.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/page_json/order.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/settings/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/settings/about.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/settings/articles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/settings/articles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/settings/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/settings/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/settings/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/settings/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/1_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/1_article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/2_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/2_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/3_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/3_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/4_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/4_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/5_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/5_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/website_files/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/website_files/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/website_files/images/favicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/website_files/images/favicon.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/website_files/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/website_files/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/example/website_files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/website_files/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/json_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/json_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,68 +37,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="416">
+              <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
               <folding>
-                <element signature="e#358#369#0" expanded="true" />
+                <element signature="e#353#364#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing/json_test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testing/find_and_replace_IO_test.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="410">
-                <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/example/page_json/order.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/example/website_files/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/example/page_json/index.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/example/example_article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -95,6 +58,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>this is the menu you get</find>
+      <find>open an existing project</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -103,12 +72,14 @@
       <list>
         <option value="$PROJECT_DIR$/find_and_replace_IO_test.py" />
         <option value="$PROJECT_DIR$/json_test.py" />
-        <option value="$PROJECT_DIR$/generator.py" />
         <option value="$PROJECT_DIR$/count.txt" />
         <option value="$PROJECT_DIR$/projects/example/article_json/index.html" />
         <option value="$PROJECT_DIR$/projects/example/website_files/index.html" />
         <option value="$PROJECT_DIR$/projects/example/example_article.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/projects/example/article_json/example_article.json" />
+        <option value="$PROJECT_DIR$/projects/example/page_json/index.json" />
+        <option value="$PROJECT_DIR$/generator.py" />
       </list>
     </option>
   </component>
@@ -132,64 +103,13 @@
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="article_json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="page_json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="website_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="website_files" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="website_files" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="project_template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -204,23 +124,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json_test.py" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/generator.py" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
-      <console-settings is-module-sdk="true">
+      <console-settings module-name="staticsitegenerator" is-module-sdk="true">
         <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="staticsitegenerator" />
       </console-settings>
     </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alan\staticsitegenerator\projects\example\page_json" />
+      <recent name="C:\Users\Alan\staticsitegenerator\template" />
       <recent name="C:\Users\Alan\staticsitegenerator\projects\example" />
+      <recent name="C:\Users\Alan\staticsitegenerator\projects\example\page_json" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing" />
       <recent name="C:\Users\Alan\staticsitegenerator\projects\example\website_files" />
-      <recent name="C:\Users\Alan\staticsitegenerator\projects\example\settings" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alan\staticsitegenerator\projects\example\website_files" />
@@ -243,7 +164,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="json_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="generator" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="staticsitegenerator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -255,7 +176,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Alan\staticsitegenerator\testing\json_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -280,14 +201,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.1191766" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2560175" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3716143" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34777898" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -309,7 +229,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/settings/count.txt">
+    <entry file="file://$PROJECT_DIR$/template/project_template/settings/count.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/projects/example/article_json/index.html">
@@ -319,22 +239,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/website_files/images/logo.png">
+    <entry file="file://$PROJECT_DIR$/template/project_template/website_files/images/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/templates/1_article.html">
+    <entry file="file://$PROJECT_DIR$/template/project_template/templates/1_article.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/article_json/example_article.json">
+    <entry file="file://$PROJECT_DIR$/template/project_template/settings/settings.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/settings/settings.json">
+    <entry file="file://$PROJECT_DIR$/template/project_template/settings/articles.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/settings/articles.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/website_files/css/site.css">
+    <entry file="file://$PROJECT_DIR$/template/project_template/website_files/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
@@ -351,53 +268,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/json_test.py">
+    <entry file="file://$PROJECT_DIR$/template/project_template/website_files/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/website_files/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-7">
           <caret selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/page_json/index.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/example_article.html">
+    <entry file="file://$PROJECT_DIR$/template/project_template/example_article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="-7">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/find_and_replace_IO_test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generator.py">
+    <entry file="file://$PROJECT_DIR$/template/project_template/page_json/index.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#358#369#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projects/example/page_json/order.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="410">
-            <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+          <first_editor relative-caret-position="155">
+            <caret line="169" column="20" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/project_template/article_json/example_article.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/project_template/page_json/order.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/find_and_replace_IO_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/json_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1400">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="117" column="44" selection-start-line="117" selection-start-column="44" selection-end-line="117" selection-end-column="44" />
+          <folding>
+            <element signature="e#353#364#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

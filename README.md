@@ -26,7 +26,19 @@ Long story short, it's a very simple way to make a minimal and relatively secure
 
 ## What are the dependencies for Static Site Generator?
 
-Just install the latest version of Python 3. You can download Python [here](https://www.python.org/downloads/). That's all it needs. It can run on Windows, macOS, and Linux.
+Install the latest version of Python 3. You can download Python [here](https://www.python.org/downloads/). 
+
+In addition to Python, you need [pip](https://pypi.org/project/pip/). You will also need to install [jsonschema](https://pypi.org/project/jsonschema/), which can be installed with the following command:
+
+```
+pip install jsonschema
+```
+
+It can run on Windows, macOS, and Linux. Just make sure your path variable is set up correctly so you can run generator.py as either ```python3 generator.py``` or ```python generator.py```, or even:
+
+```
+chmod +x generator.py; ./generator.py
+```
 
 ---
 
@@ -150,6 +162,8 @@ If you make a new project, use generator.py and choose the appropriate option th
 - **page_json folder**
     - There are 5 articles per page. This is called pagination. The page JSON files are generated based on the articles, as specified in articles.txt, and then fetched from their respective JSON files in article_json. If you have 25 articles, there will be 5 pageX.json files. If you have a number of articles that is not divisible by 5, that's where some special 1-4 article templates come into play, and there will only be the extra 1-4 articles instead of the entire 5. index.json is always the last page, which becomes index.html. It goes in reverse order (NOTE: maybe I am wrong about this and should clarify the order?): the oldest (first) articles you make will be on the last pages. This is because, nowadays, with social media, we want to see the newest stuff first, even if it was written after the first stuff. So if you have 25 articles, page1.json will have the oldest articles, and page4.json will have some newer articles, but index.json will have the absolute newest, essentially being equivalent to page5.json (in this specific example, at least). UPDATE: index.html has the latest articles. When you click next, it will lead to what is called page2.html, which will just be older articles than index.html. But if you had 5 pages worth of articles, page5.html would actually have the oldest articles. The order and pages change based on how many new things there are. But your oldest articles will always be on the last page, whether it's page 5 or page 100. 
     - order.json determines the order of articles based on user-provided timestamp rather than actual timestamp. For example: a user can upload an old post they wrote a long time ago. Maybe they wrote something in 2017 but only made a website in 2019. The user specifies the timestamp, so even if you posted a 2019 article before the 2017 article, the one specified as earlier based on the user's input for the article creation/editing will go first (which means it will be below the newer stuff, based on the way the timeline is designed)
+- **schemas folder**
+    - Contains schemas for JSON validation
 - **settings folder**
     - This contains a few important files that determine the settings/configuration of your project. 
     - **about.json**

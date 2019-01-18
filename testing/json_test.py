@@ -46,7 +46,7 @@ article['body text'] = input('Enter the body text of the article (can\'t handle 
 article['lead_image'] = input('Enter the filename of the lead image (and put it in the images subfolder): ')
 some_string = json.dumps(article)
 print(some_string)
-filename = input("Enter the filename (which will also be the URL, such as example.com/filename.html): ")
+filename = input("Enter the filename (which will also be the URL, such as project_template.com/filename.html): ")
 with open(filename + ".json","w") as json_file:
     json_file.write(some_string)
     print("wrote to file" + filename)
