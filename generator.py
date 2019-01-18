@@ -19,8 +19,6 @@ working_project = ""  # the project that is open
 def main():
 
     args_provided = has_command_line_args()
-    print("args_provided:")
-    print(args_provided)
     fast_mode = True  # turn this off later, the text prompt is useful for new users but annoying for
                       # me as the developer because it makes running the program take longer
 
@@ -36,7 +34,6 @@ def main():
     if not fast_mode:
         beginning_prompt()  # simple text notice
     # MAIN START
-    print("REEEE right here scoping_hotfix is " + scoping_hotfix)
     menu_check_thing(args_provided, scoping_hotfix)
 
 
@@ -70,7 +67,6 @@ def arg_steps():
         print("sys.argv[2]: " + str(sys.argv[2]))
         print("length of sys.argv:" + str(len(sys.argv)))
         sys.exit()
-    print("REEEEE working project is" + working_project)
     return working_project
 
 # attempt to open a project, but checks if it's valid first
@@ -102,54 +98,46 @@ def has_command_line_args():
         return False
 
 
-# this is run before proceeding to the main_project_menu, which is
-# where everything useful happens
-# not gonna lie, this could be a lot cleaner, but it works
-# in the future I want to replace this function with a GUI
-# be sure to make things modular in here so I can hook them up to
-# GUI button event handlers instead of the input() and if/while loops
+# this is run before proceeding to the main_project_menu
 def menu_check_thing(args_provided, current_working_project):
-    print("current working project: " + current_working_project)
     # at this point, the project may or may not be set yet
     menu_choice = ""
     if not args_provided:
-        print("this is the menu you get when you didn't provide any extra command line args")
-        print("Here's what you can do with Alan's Static Site Generator:")
+        print("Options menu:")
         print("1. Open an existing project")
         print("2. Create a new project")
-        menu_choice = input("Type a number to do something, or type quit to quit: ")
+        menu_choice = input("Type a number or the word quit followed by enter: ")
     else:  # if args were provided
         print("do something about current_working_project here maybe")
     proceed = args_provided # whether to skip the file open or creation
     # proceed means to skip the process of selecting whether to open a project or make a new one
     # if you did the command line args then you already opened something
-    # kinda spaghetti-ish but whatever, it works
 
-    while menu_choice != 'quit' and not proceed: # if args were provided then this does not happen
+    while menu_choice != 'quit' and not proceed:  # if args were provided then this does not happen
         if menu_choice == str(1):
             project_name = input("Enter the project name to open: ")
             print("Opening existing project called " + project_name + ".")
             project_success = open_project(project_name)  # returns whether it succeeded or not
             if not project_success:
-                print("invalid project to open, try again")
+                print("Invalid project to open, try again.")
             else:
                 proceed = True
         elif menu_choice == str(2):
             project_name = input("Enter a name for the new project: ")
             print("Creating a new project called " + project_name + " in the projects folder.")
-            print("STUB: create the files and folders for the new project")
-            print("STUB: get the username, about text, website title, email, twitter, and github from the user")
+            # print("STUB: create the files and folders for the new project")
+            # print("STUB: get the username, about text, website title, email, twitter, and github from the user")
             project_success = create_project(project_name)  # returns whether it succeeded or not
             if not project_success:
-                print("invalid project name, try again")
+                print("Invalid project name, try again.")
             else:
                 proceed = True
         else:
             print("Invalid choice. Try again.")
-            print("Here's what you can do with Alan's Static Site Generator:")
+            print("Options menu:")
             print("1. Open an existing project")
             print("2. Create a new project")
-            menu_choice = input("Type a number to do something, or type quit to quit: ")
+            menu_choice = input("Type a number or the word quit followed by enter: ")
     if not proceed:
         print("Goodbye.")
     else:
@@ -163,33 +151,49 @@ def menu_check_thing(args_provided, current_working_project):
 # you only get here after a project is open
 # if a new project is created, it is opened
 def main_project_menu(project_name, REAL_working_project):
-    working_project = project_name
+    ACTUAL_project_name = ""
+    if REAL_working_project == "":
+        ACTUAL_project_name = project_name
+    else:
+        ACTUAL_project_name = REAL_working_project
 
-    # ignore the other stuff which is confusing
-    # only care about the REAL_working_project
-    # you can probably tell I am frustrated with trying to fix this
-    print("after the colon should be blank if no cli args, or say project if used args: " + REAL_working_project)
-
-    print("MAIN PROJECT MENU with open project " + project_name)
-    print("Here are your choices: ")
-    print("1. article menu")
-    print("2. work on this, it's not done")
-    print("DEBUG: value of project_name is " + project_name)
-    print("DEBUG: value of working_project is " + working_project)
-    second_menu_choice = input("Type a number to do something, or type quit to quit: ")
+    print_numbered_menu("second", ACTUAL_project_name)
+    second_menu_choice = input("Type a number or the word quit followed by enter: ")
     while second_menu_choice != 'quit':
-        print("this is not finished yet")
         if second_menu_choice == str(1):
             print("first menu choice")
         elif second_menu_choice == str(2):
             print("second menu choice")
+        elif second_menu_choice == str(3):
+            print("third menu choice")
         else:
             print("Invalid choice. Try again.")
-            print("MAIN PROJECT MENU with open project " + project_name)
-            print("Here are your choices: ")
-            print("copy the entire numbered menu here again")
+            print_numbered_menu("second", ACTUAL_project_name)
+        print_numbered_menu("second", ACTUAL_project_name)
         second_menu_choice = input("Type a number to do something, or type quit to quit: ")
+
+
     print("Goodbye.")
+
+
+def print_numbered_menu(menu, proj):
+    print("MAIN PROJECT MENU with open project " + proj)
+    print("Options menu: ")
+    # second nested menu
+    if menu == "second":
+        print("1. Article menu")
+        print("2. Settings menu")
+        print("3. Project menu")
+    # third menu
+    elif menu == "article":
+        print("1. here is the unfinished article thing")
+    elif menu == "settings":
+        print("1. here is the unfinished settings thing")
+    elif menu == "project":
+        print("1. here is the unfinished project thing")
+    else:
+        print("invalud print")
+
 
 
 if __name__ == '__main__':
