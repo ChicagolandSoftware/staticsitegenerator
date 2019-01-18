@@ -118,7 +118,8 @@ def menu_check_thing(args_provided, current_working_project):
         print("1. Open an existing project")
         print("2. Create a new project")
         menu_choice = input("Type a number to do something, or type quit to quit: ")
-
+    else:  # if args were provided
+        print("do something about current_working_project here maybe")
     proceed = args_provided # whether to skip the file open or creation
     # proceed means to skip the process of selecting whether to open a project or make a new one
     # if you did the command line args then you already opened something
@@ -153,16 +154,21 @@ def menu_check_thing(args_provided, current_working_project):
         print("Goodbye.")
     else:
         if not args_provided:
-            main_project_menu(project_name)
+            main_project_menu(project_name, current_working_project)
         elif args_provided:
-            main_project_menu(working_project)
+            main_project_menu(working_project, current_working_project)
         else:
             print("what happened?")
 
 # you only get here after a project is open
 # if a new project is created, it is opened
-def main_project_menu(project_name):
+def main_project_menu(project_name, REAL_working_project):
     working_project = project_name
+
+    # ignore the other stuff which is confusing
+    # only care about the REAL_working_project
+    # you can probably tell I am frustrated with trying to fix this
+    print("after the colon should be blank if no cli args, or say project if used args: " + REAL_working_project)
 
     print("MAIN PROJECT MENU with open project " + project_name)
     print("Here are your choices: ")
