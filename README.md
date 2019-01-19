@@ -155,6 +155,10 @@ When you open a project, it checks for a directory located in the projects folde
 
 ### The files and folders in this project:
 
+#### This is outdated! Needs to reflect the current changes!
+
+Basically similar project template stuff but I removed some other stuff
+
 If you make a new project, use generator.py and choose the appropriate option through the menus, and it will make a new folder with the name you specify. Within that folder, it will make the following things:
 - **article_json folder**
     - stores json files that contain the content of your articles. This separates content from presentation. These JSON files are used along with the template files in order for generator.py to generate the static html.
