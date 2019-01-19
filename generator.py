@@ -12,12 +12,11 @@ import os
 import sys
 import json
 
-
 working_project = ""  # the project that is open
 
 # main program entry point
 def main():
-
+    # I really should have used argparse instead of my bad DIY method of handling sys.argv stuff
     args_provided = has_command_line_args()
     fast_mode = True  # turn this off later, the text prompt is useful for new users but annoying for
                       # me as the developer because it makes running the program take longer
@@ -161,11 +160,11 @@ def main_project_menu(project_name, REAL_working_project):
     second_menu_choice = input("Type a number or the word quit followed by enter: ")
     while second_menu_choice != 'quit':
         if second_menu_choice == str(1):
-            print("first menu choice")
+            print_numbered_menu("article", ACTUAL_project_name)
         elif second_menu_choice == str(2):
-            print("second menu choice")
+            print_numbered_menu("settings", ACTUAL_project_name)
         elif second_menu_choice == str(3):
-            print("third menu choice")
+            print_numbered_menu("project", ACTUAL_project_name)
         else:
             print("Invalid choice. Try again.")
             print_numbered_menu("second", ACTUAL_project_name)
@@ -177,7 +176,8 @@ def main_project_menu(project_name, REAL_working_project):
 
 
 def print_numbered_menu(menu, proj):
-    print("MAIN PROJECT MENU with open project " + proj)
+    clear_terminal()
+    print("Working with open project " + proj)
     print("Options menu: ")
     # second nested menu
     if menu == "second":
@@ -186,15 +186,52 @@ def print_numbered_menu(menu, proj):
         print("3. Project menu")
     # third menu
     elif menu == "article":
-        print("1. here is the unfinished article thing")
+        article_menu()
     elif menu == "settings":
-        print("1. here is the unfinished settings thing")
+        settings_menu()
     elif menu == "project":
-        print("1. here is the unfinished project thing")
+        project_menu()
     else:
-        print("invalud print")
+        print("Invalid choice. Try again.")
 
 
+def article_menu():
+    print("1. Create an article")
+    print("2. Read an article")
+    print("3. Update an article")
+    print("4. Delete an article")
+    print("5. Show all article names")
+    print("6. Return to main menu")
+    print("THIS IS NOT COMPLETE")
+    print("USE A MODULE FOR THE ARTICLE FUNCTIONS")
+    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
+
+def settings_menu():
+    print("1. About page menu")
+    print("2. Social media menu")
+    print("3. Website title menu")
+    print("4. Logo menu")
+    print("5. Return to main menu")
+    print("THIS IS NOT COMPLETE")
+    print("USE A MODULE FOR THE SETTINGS FUNCTIONS")
+    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
+
+def project_menu():
+    print("1. View project info")
+    print("2. Rename project")
+    print("3. Delete project")
+    print("4. Open a different project")
+    print("5. Regenerate static HTML pages")
+    print("7. Return to main menu")
+    print("THIS IS NOT COMPLETE")
+    print("USE A MODULE FOR THE SETTINGS FUNCTIONS")
+    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
+
+def clear_terminal():
+    if os.name == "nt":  # windows
+        os.system("cls")
+    else:
+        os.system("clear")
 
 if __name__ == '__main__':
     main()
