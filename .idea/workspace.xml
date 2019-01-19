@@ -2,9 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/template/settings/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/project_template/settings/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/project_template/settings/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/1_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/1_article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/2_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/2_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/3_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/3_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/4_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/4_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/5_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/5_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/article_json/example_article.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/article_json/example_article.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/example_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/example_article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/page_json/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/page_json/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/page_json/order.json" beforeDir="false" afterPath="$PROJECT_DIR$/num_pair_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/settings/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/page_json/order.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/settings/articles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/settings/about.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/settings/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/settings/count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/settings/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/settings/articles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/1_article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/2_articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/3_articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/4_articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/5_articles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/article.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/website_files/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/template/website_files/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/website_files/images/favicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/template/website_files/images/favicon.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/website_files/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/template/website_files/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/project_template/website_files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/website_files/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +41,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="181" column="16" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="16" />
+            <state relative-caret-position="591">
+              <caret line="201" selection-start-line="201" selection-end-line="201" />
               <folding>
                 <element signature="e#353#364#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/num_pair_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="658">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/article_json/example_article.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -63,6 +108,8 @@
         <option value="$PROJECT_DIR$/projects/example/page_json/index.json" />
         <option value="$PROJECT_DIR$/template/project_template/settings/count.txt" />
         <option value="$PROJECT_DIR$/generator.py" />
+        <option value="$PROJECT_DIR$/template/project_template/article_json/example_article.json" />
+        <option value="$PROJECT_DIR$/num_pair_test.py" />
       </list>
     </option>
   </component>
@@ -92,19 +139,57 @@
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="project_template" type="462c0819:PsiDirectoryNode" />
+              <item name="article_json" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="project_template" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="html_page_templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="page_json" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="settings" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="website_files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="website_files" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="website_files" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -114,7 +199,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/generator.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/num_pair_test.py" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -154,7 +239,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="generator" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="num_pair_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="staticsitegenerator" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -166,7 +251,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/num_pair_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,12 +278,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15858799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1938883" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3716143" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24485373" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2112676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -227,19 +312,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/website_files/images/logo.png">
+    <entry file="file://$PROJECT_DIR$/template/website_files/images/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/templates/1_article.html">
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/1_article.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/settings/settings.json">
+    <entry file="file://$PROJECT_DIR$/template/settings/settings.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/settings/articles.txt">
+    <entry file="file://$PROJECT_DIR$/template/settings/articles.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/website_files/css/site.css">
+    <entry file="file://$PROJECT_DIR$/template/website_files/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
@@ -256,21 +341,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/website_files/index.html">
+    <entry file="file://$PROJECT_DIR$/template/website_files/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/example_article.html">
+    <entry file="file://$PROJECT_DIR$/template/example_article.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/page_json/index.json">
+    <entry file="file://$PROJECT_DIR$/template/page_json/index.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
@@ -287,17 +372,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/article_json/example_article.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/page_json/order.json">
+    <entry file="file://$PROJECT_DIR$/template/page_json/order.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/find_and_replace_IO_test.py">
@@ -317,20 +395,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/project_template/settings/count.txt">
+    <entry file="file://$PROJECT_DIR$/template/settings/count.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/article_json/example_article.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="181" column="16" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="16" />
+        <state relative-caret-position="591">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
           <folding>
             <element signature="e#353#364#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/num_pair_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
