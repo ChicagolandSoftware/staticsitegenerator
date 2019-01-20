@@ -159,6 +159,8 @@ When you open a project, it checks for a directory located in the projects folde
 
 Basically similar project template stuff but I removed some other stuff
 
+- Modules directory contains modules to be imported by generator.py. This is so that not everything is in a single generator.py file. The generator.py submenus will use functions that are in the separate modules. The settings module allows you to interact with settings, such as viewing or changing settings that are in the settings folder. The articles module is for articule create read update delete stuff. Article module is for JSON and user input, not for combining the content with the templating. The projects module contains functions for dealing with project-related stuff. The initial setup module is for populating certain settings JSON values when you first create a project. And lastly, the biggest and most complicated module is the regeneration module, which will combine your content with your layout, perform pagination algorithm stuff, etc. to generate the static site files that will be put into the website_files folder. That is your actual static site. 
+
 If you make a new project, use generator.py and choose the appropriate option through the menus, and it will make a new folder with the name you specify. Within that folder, it will make the following things:
 - **article_json folder**
     - stores json files that contain the content of your articles. This separates content from presentation. These JSON files are used along with the template files in order for generator.py to generate the static html.
@@ -216,3 +218,9 @@ Please make a GitHub issue or pull request, or email me or message me on Twitter
 ## License
 
 This project is released under the GNU GPLv3. 
+
+## Interesting tidbit about comments and documentation I learned
+
+"A comment is a lie waiting to happen"
+
+If you don't update your comments or documentation, it might become out of date and give incorrect information, because it might pertain to a previous version of the software and won't reflect the changes that were made. I will have to overhaul this documentation page at some point, as there have been many settings since I originally wrote it all.
