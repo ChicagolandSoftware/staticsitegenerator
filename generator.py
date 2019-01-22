@@ -10,21 +10,16 @@
 import time
 import os
 import sys
-import json
-import initial_setup_module
-import article_module
-import settings_module
-import project_module
-import regeneration_module
-import project_class
-
-
-print(article_module.ex("durr"))
+from modules import article_module
+from modules import settings_module
+from modules import project_module
+from modules import project_class
 
 working_project = ""  # the project that is open
 
 # main program entry point
 def main():
+    project_object = project_class.ProjectClass("example")
     # I really should have used argparse instead of my bad DIY method of handling sys.argv stuff
     args_provided = has_command_line_args()
     fast_mode = True  # turn this off later, the text prompt is useful for new users but annoying for
@@ -55,21 +50,19 @@ def beginning_prompt():
     time.sleep(5)
 
 def arg_steps():
-    print("handle the command line arguments here, at least for opening or making a new project")
     # opening by cli args i.e. python generator.py --open some_project
     if ((sys.argv[1] == "--open") or (sys.argv[1] == "-o")) and (len(sys.argv) == 3):
         working_project = sys.argv[2]
         arg_name = sys.argv[2]  # name of project provided as an argument
-        print("you are trying to open an existing project with name: " + arg_name)
+        # print("you are trying to open an existing project with name: " + arg_name)
         open_project(arg_name)
     # making a new project via cli args .e. python generator.py --new new_project
     elif ((sys.argv[1] == "--new") or (sys.argv[1] == "-n")) and (len(sys.argv) == 3):
         working_project = sys.argv[2]
         arg_name = sys.argv[2]
-        print("you are trying to create a new project with name: " + arg_name)
+        # print("you are trying to create a new project with name: " + arg_name)
         create_project(arg_name)
     else:
-        print("add more elifs in the future for different command line args")
         print("if you got here it means you provided invalid command line args")
         print("sys.argv[1]: " + str(sys.argv[1]))
         print("sys.argv[2]: " + str(sys.argv[2]))
@@ -116,7 +109,8 @@ def menu_check_thing(args_provided, current_working_project):
         print("2. Create a new project")
         menu_choice = input("Type a number or the word quit followed by enter: ")
     else:  # if args were provided
-        print("do something about current_working_project here maybe")
+        # print("do something about current_working_project here maybe")
+        pass
     proceed = args_provided # whether to skip the file open or creation
     # proceed means to skip the process of selecting whether to open a project or make a new one
     # if you did the command line args then you already opened something
@@ -185,6 +179,7 @@ def main_project_menu(project_name, REAL_working_project):
 
 
 def print_numbered_menu(menu, proj):
+    input("Hit enter to continue.")
     clear_terminal()
     print("Working with open project " + proj)
     print("Options menu: ")
@@ -195,46 +190,15 @@ def print_numbered_menu(menu, proj):
         print("3. Project menu")
     # third menu
     elif menu == "article":
-        article_menu()
+        article_module.article_menu()
     elif menu == "settings":
-        settings_menu()
+        settings_module.settings_menu()
     elif menu == "project":
-        project_menu()
+        project_module.project_menu()
     else:
         print("Invalid choice. Try again.")
 
 
-def article_menu():
-    print("1. Create an article")
-    print("2. Read an article")
-    print("3. Update an article")
-    print("4. Delete an article")
-    print("5. Show all article names")
-    print("6. Return to main menu")
-    print("THIS IS NOT COMPLETE")
-    print("USE A MODULE FOR THE ARTICLE FUNCTIONS")
-    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
-
-def settings_menu():
-    print("1. About page menu")
-    print("2. Social media menu")
-    print("3. Website title menu")
-    print("4. Logo menu")
-    print("5. Return to main menu")
-    print("THIS IS NOT COMPLETE")
-    print("USE A MODULE FOR THE SETTINGS FUNCTIONS")
-    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
-
-def project_menu():
-    print("1. View project info")
-    print("2. Rename project")
-    print("3. Delete project")
-    print("4. Open a different project")
-    print("5. Regenerate static HTML pages")
-    print("7. Return to main menu")
-    print("THIS IS NOT COMPLETE")
-    print("USE A MODULE FOR THE SETTINGS FUNCTIONS")
-    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
 
 def clear_terminal():
     if os.name == "nt":  # windows

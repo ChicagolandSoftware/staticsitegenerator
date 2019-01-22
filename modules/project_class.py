@@ -5,7 +5,7 @@ class ProjectClass:
 
     # constructor with default project
     def __init__(self, project_name="example"):
-        if self.validate_name():
+        if self.validate_name(project_name):
             self.project_name = project_name
         else:
             print("invalid project_name, sticking with example instead")
@@ -19,7 +19,7 @@ class ProjectClass:
         self.project_name = project_name
 
     def validate_name(self, project_name):
-        print("this is not finished, but it needs to be able to validate " + project_name)
+        print("ProjectClass is not finished, but it needs to be able to validate " + project_name)
         passed_check = True # needs to be checked
         if (passed_check): # needs to be finished
             return True
