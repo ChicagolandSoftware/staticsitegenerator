@@ -4,6 +4,7 @@
 
 import re # regular expression
 import os
+import sys
 class ProjectClass:
 
     # constructor with default project
@@ -31,6 +32,7 @@ class ProjectClass:
             # if it doesn't exist, then make a new project
             if project_exists:
                 print("Error: project already exists.")
+                sys.exit()
                 return False
             else:
                 print("That project does not exist yet. Proceeding (unfinished)")
@@ -61,21 +63,24 @@ class ProjectClass:
         else:
             print("invalid project_name, unable to check for project check_for_existing_project")
 
-    def validate_name(self, project_name):
+    def say_guidelines(self):
+        print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
         print("Project name guidelines: A-Z, a-z, 0-9, and - ONLY. 2-32 chars.")
+
+    def validate_name(self, project_name):
         unallowed_words = {'quit', 'template', 'testing', 'test', '-o', '-n',
                            '--open', '--new', 'python', 'python3', '', 'modules', 'projects',
                            'article_json', 'css', 'images', 'html_page_templates', 'page_json',
                            'schemas', 'settings', 'default', 'website_files', 'InputFiles', 'OutputFiles',
                            'venv'}
-        print("ProjectClass is not finished, but it needs to be able to validate " + project_name)
         if project_name not in unallowed_words:
-            print("this is where you will make the new project based on project_name and templates")
             re_string = re.findall('[a-zA-Z0-9_]', project_name)
             if (len(re_string) != len(project_name)) or len(project_name) < 2 or len(project_name) > 32:
                 return False
             else:
                 return True
         else:
-            print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
+            self.say_guidelines()
             return False
+
+

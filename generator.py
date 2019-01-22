@@ -82,16 +82,14 @@ def arg_steps():
 
 # attempt to open a project, but checks if it's valid first
 def open_project(project_name):
-    print("starting open_project(" + project_name + ")... ")
     open_attempt = project_object.validate_name(project_name)
     if not open_attempt and len(sys.argv) == 3:
-        print("supposed to exit here for cli only")
+        project_object.say_guidelines()
         sys.exit()
     elif not open_attempt:
+        print("Error with number of args")
         return False
-        print("not open attempt but sys.argv len is not 3")
     else:
-        print("open_project() returning True")
         return True
 
 # attempt to create a project, check if name is valid and not in use
@@ -102,11 +100,10 @@ def create_project(project_name):
     proceed = True
     working_project = project_name
     # the above is stuff in create_project() is cruft from a previous version before I refactored but it might be important?
-    print("project name during create_project: " + project_name)
     if project_object.validate_name(project_name):
         return project_object.make_new_project(project_name)
     else:
-        print("invalid project name during create_project()")
+        project_object.say_guidelines()
         sys.exit()
 
 
@@ -145,13 +142,13 @@ def menu_check_thing(args_provided, current_working_project):
                 proceed = True
         elif menu_choice == str(2):
             project_name = input("Enter a name for the new project: ")
-            print("Creating a new project called " + project_name + " in the projects folder.")
             # print("STUB: create the files and folders for the new project")
             # print("STUB: get the username, about text, website title, email, twitter, and github from the user")
             project_success = create_project(project_name)  # returns whether it succeeded or not
             if not project_success:
                 print("Invalid project name, try again.")
             else:
+                print("Creating a new project called " + project_name + " in the projects folder.")
                 proceed = True
         else:
             print("Invalid choice. Try again.")
