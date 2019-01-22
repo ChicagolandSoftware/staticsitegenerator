@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/article_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/find_and_replace_IO_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing/find_and_replace_IO_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/article_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/initial_setup_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/initial_setup_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/project_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/regeneration_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/regeneration_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/settings_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/OutputFiles/testing_ground.html" beforeDir="false" afterPath="$PROJECT_DIR$/testing/OutputFiles/testing_ground.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +20,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/project_class.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/json_test.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -22,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testing/find_and_replace_IO_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state relative-caret-position="443">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#450#459#0" expanded="true" />
               </folding>
@@ -89,7 +114,6 @@
         <option value="$PROJECT_DIR$/template/project_template/settings/count.txt" />
         <option value="$PROJECT_DIR$/template/project_template/article_json/example_article.json" />
         <option value="$PROJECT_DIR$/num_pair_test.py" />
-        <option value="$PROJECT_DIR$/generator.py" />
         <option value="$PROJECT_DIR$/template/html_page_templates/about.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/index.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/1_article.html" />
@@ -99,7 +123,6 @@
         <option value="$PROJECT_DIR$/template/html_page_templates/2_articles.html" />
         <option value="$PROJECT_DIR$/template/article_json/example_article.json" />
         <option value="$PROJECT_DIR$/modules/settings_module.py" />
-        <option value="$PROJECT_DIR$/modules/article_module.py" />
         <option value="$PROJECT_DIR$/modules/project_module.py" />
         <option value="$PROJECT_DIR$/modules/regeneration_module.py" />
         <option value="$PROJECT_DIR$/modules/initial_setup_module.py" />
@@ -108,12 +131,17 @@
         <option value="$PROJECT_DIR$/testing/InputFiles/file2.txt" />
         <option value="$PROJECT_DIR$/testing/InputFiles/testing_ground.html" />
         <option value="$PROJECT_DIR$/testing/find_and_replace_IO_test.py" />
+        <option value="$PROJECT_DIR$/project_class" />
+        <option value="$PROJECT_DIR$/project_class.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/modules/article_module.py" />
+        <option value="$PROJECT_DIR$/generator.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="958" />
+    <option name="width" value="969" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -127,28 +155,6 @@
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="InputFiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="testing" type="462c0819:PsiDirectoryNode" />
-              <item name="OutputFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,18 +177,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alan\staticsitegenerator" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing\images" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing" />
       <recent name="C:\Users\Alan\staticsitegenerator\template" />
       <recent name="C:\Users\Alan\staticsitegenerator\projects\example" />
-      <recent name="C:\Users\Alan\staticsitegenerator\projects\example\page_json" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Alan\staticsitegenerator\modules" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing\OutputFiles\images" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing\OutputFiles" />
       <recent name="C:\Users\Alan\staticsitegenerator\testing\InputFiles" />
-      <recent name="C:\Users\Alan\staticsitegenerator\projects\example\website_files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -259,15 +265,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="958" y="0" width="969" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12223393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35875404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3716143" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38894907" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28118163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,19 +432,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/settings_module.py">
+    <entry file="file://$PROJECT_DIR$/settings_module.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/article_module.py">
+    <entry file="file://$PROJECT_DIR$/project_module.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/project_module.py">
+    <entry file="file://$PROJECT_DIR$/regeneration_module.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/regeneration_module.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/initial_setup_module.py">
+    <entry file="file://$PROJECT_DIR$/initial_setup_module.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -498,16 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="151" column="56" selection-start-line="151" selection-start-column="56" selection-end-line="151" selection-end-column="56" />
-          <folding>
-            <element signature="e#354#365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/example_article.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -531,11 +524,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing/find_and_replace_IO_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state relative-caret-position="443">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#450#459#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

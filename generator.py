@@ -11,6 +11,15 @@ import time
 import os
 import sys
 import json
+import initial_setup_module
+import article_module
+import settings_module
+import project_module
+import regeneration_module
+import project_class
+
+
+print(article_module.ex("durr"))
 
 working_project = ""  # the project that is open
 
