@@ -28,7 +28,14 @@ def main():
     # run program with cli args = faster but for more advanced users
     scoping_hotfix = ""  # bad workaround
     if args_provided:
-        scoping_hotfix = arg_steps();
+        if len(sys.argv) == 2:
+            print("Error: invalid command line arguments.")
+            print("Examples of proper usage: ")
+            print("python3 generator.py --open project_that_exists")
+            print("python3 generator.py --new some_new_project")
+            sys.exit()
+        else:
+            scoping_hotfix = arg_steps();
     # end of cli args stuff
     # beginning of program entry for no when generator.py is run with no arguments
     if not fast_mode:

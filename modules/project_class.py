@@ -2,7 +2,7 @@
 # there is supposed to only be once ProjectClass instance for generator.py
 # called project_object
 
-
+import re # regular expression
 class ProjectClass:
 
     # constructor with default project
@@ -22,7 +22,6 @@ class ProjectClass:
 
     def make_new_project(self, project_name):
         if self.validate_name(project_name):
-            print("this is where you will make the new project based on project_name and templates")
             return True
         else:
             print("invalid project_name, unable to make new project")
@@ -39,9 +38,19 @@ class ProjectClass:
             print("invalid project_name, unable to check for project")
 
     def validate_name(self, project_name):
+        print("Project name guidelines: A-Z, a-z, 0-9, and - or _ ONLY. 2-32 chars.")
+        # later: maybe put example back into the list of unallowed words
+        unallowed_words = {'quit', 'template', 'testing', 'test', '-o', '-n',
+                           '--open', '--new', 'python', 'python3', '', 'modules', 'projects',
+                           'article_json', 'css', 'images', 'html_page_templates', 'page_json',
+                           'schemas', 'settings', 'website_files', 'InputFiles', 'OutputFiles',
+                           'venv'}
         print("ProjectClass is not finished, but it needs to be able to validate " + project_name)
-        passed_check = True # needs to be checked
-        if (passed_check): # needs to be finished
+        if project_name not in unallowed_words:
+            print("this is where you will make the new project based on project_name and templates")
+            # re.findall(, project_name)
+
             return True
-        else: # if it failed validation
+        else:
+            print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
             return False

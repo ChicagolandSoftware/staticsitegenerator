@@ -4,13 +4,7 @@
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/article_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/article_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/project_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/project_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/project_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/project_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/settings_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/settings_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regeneration_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/regeneration_module.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/images/favicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/template/images/favicon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/images/favicon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/testing/images/favicon.gif" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="220">
+              <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
               <folding>
                 <element signature="e#354#365#0" expanded="true" />
               </folding>
@@ -35,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/project_class.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="354">
+              <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -546,15 +540,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/project_class.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="354">
+          <caret line="48" column="46" lean-forward="true" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="220">
+          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
           <folding>
             <element signature="e#354#365#0" expanded="true" />
           </folding>
