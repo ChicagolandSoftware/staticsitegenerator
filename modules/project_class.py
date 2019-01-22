@@ -38,19 +38,20 @@ class ProjectClass:
             print("invalid project_name, unable to check for project")
 
     def validate_name(self, project_name):
-        print("Project name guidelines: A-Z, a-z, 0-9, and - or _ ONLY. 2-32 chars.")
-        # later: maybe put example back into the list of unallowed words
+        print("Project name guidelines: A-Z, a-z, 0-9, and - ONLY. 2-32 chars.")
         unallowed_words = {'quit', 'template', 'testing', 'test', '-o', '-n',
                            '--open', '--new', 'python', 'python3', '', 'modules', 'projects',
                            'article_json', 'css', 'images', 'html_page_templates', 'page_json',
-                           'schemas', 'settings', 'website_files', 'InputFiles', 'OutputFiles',
+                           'schemas', 'settings', 'default', 'website_files', 'InputFiles', 'OutputFiles',
                            'venv'}
         print("ProjectClass is not finished, but it needs to be able to validate " + project_name)
         if project_name not in unallowed_words:
             print("this is where you will make the new project based on project_name and templates")
-            # re.findall(, project_name)
-
-            return True
+            re_string = re.findall('[a-zA-Z0-9_]', project_name)
+            if (len(re_string) != len(project_name)) or len(project_name) < 2 or len(project_name) > 32:
+                return False
+            else:
+                return True
         else:
             print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
             return False
