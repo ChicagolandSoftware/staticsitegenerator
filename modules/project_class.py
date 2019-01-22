@@ -3,6 +3,7 @@
 # called project_object
 
 import re # regular expression
+import os
 class ProjectClass:
 
     # constructor with default project
@@ -20,8 +21,31 @@ class ProjectClass:
     def set_project(self, project_name):
         self.project_name = project_name
 
+    # CURRENT TO-DO
     def make_new_project(self, project_name):
         if self.validate_name(project_name):
+            # I pass the arg because it helps me remember what it's doing
+            print("process of making new project goes here")
+            # need to check if directory already exists, in which case, don't proceed
+            project_exists = os.path.isdir("projects/" + project_name)  # boolean
+            # if it doesn't exist, then make a new project
+            if project_exists:
+                print("Error: project already exists.")
+                return False
+            else:
+                print("That project does not exist yet. Proceeding (unfinished)")
+                return True
+            # testing: use os.path to get current working directory (cwd)
+            # make a new directory within (? not entirely sure of path tbh) ../projects with name _project_name
+            # copy contents of ../template and all its files and subdirs to the newly-created projects/project_name directory
+            # then the user needs to do the initial setup ASAP
+            # but there need to be default values just in case the user hits ctrl+c or something before completing
+            # or set a text file with a boolean in it to say whether or not the setup module was completed
+            # this class needs to import inital_setup_module.py
+            # I also need to finish doing all the JSON stuff, at least for dummy stuff and structure
+            # don't worry about schemas and validation just yet
+
+
             return True
         else:
             print("invalid project_name, unable to make new project")
@@ -30,12 +54,12 @@ class ProjectClass:
     def check_for_existing_project(self, project_name):
         if self.validate_name(project_name):
             print("name is valid, but now need to check if it already exists")
-            if (True): # if it was successfull, this is a placeholder
+            if (True):
                 return True
             else:
                 return False
         else:
-            print("invalid project_name, unable to check for project")
+            print("invalid project_name, unable to check for project check_for_existing_project")
 
     def validate_name(self, project_name):
         print("Project name guidelines: A-Z, a-z, 0-9, and - ONLY. 2-32 chars.")

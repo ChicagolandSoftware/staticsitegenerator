@@ -60,7 +60,12 @@ def arg_steps():
         working_project = sys.argv[2]
         arg_name = sys.argv[2]  # name of project provided as an argument
         # print("you are trying to open an existing project with name: " + arg_name)
-        open_project(arg_name)
+        opened_successfully = open_project(arg_name)
+        if not opened_successfully:
+            print("Failed to open project with specified project_name")
+            sys.exit()
+        else:
+            pass
     # making a new project via cli args i.e. python generator.py --new new_project_name
     elif ((sys.argv[1] == "--new") or (sys.argv[1] == "-n")) and (len(sys.argv) == 3):
         working_project = sys.argv[2]
@@ -77,17 +82,32 @@ def arg_steps():
 
 # attempt to open a project, but checks if it's valid first
 def open_project(project_name):
-    return project_object.validate_name(project_name)
-
+    print("starting open_project(" + project_name + ")... ")
+    open_attempt = project_object.validate_name(project_name)
+    if not open_attempt and len(sys.argv) == 3:
+        print("supposed to exit here for cli only")
+        sys.exit()
+    elif not open_attempt:
+        return False
+        print("not open attempt but sys.argv len is not 3")
+    else:
+        print("open_project() returning True")
+        return True
 
 # attempt to create a project, check if name is valid and not in use
 def create_project(project_name):
+    # the lines before the return statement are garbage, maybe I can delete without messing up anything?
     project_name_is_valid = True  # stub
     # make new project by copying from template project folder, then proceed to main_project_menu
     proceed = True
     working_project = project_name
     # the above is stuff in create_project() is cruft from a previous version before I refactored but it might be important?
-    return project_object.make_new_project(project_name)
+    print("project name during create_project: " + project_name)
+    if project_object.validate_name(project_name):
+        return project_object.make_new_project(project_name)
+    else:
+        print("invalid project name during create_project()")
+        sys.exit()
 
 
 # check if program is being run with command line args
