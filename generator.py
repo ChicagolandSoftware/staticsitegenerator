@@ -1,42 +1,39 @@
 #!/usr/bin/env python3
-
 # Alan's Static Site Generator
-# Generates static websites in the projects subfolder
-# copy the contents of your project's website_files folder to
-# your /var/www (or equivalent)
-# or git init in the website_files folder for GitHub Pages
-# For more documentation, see the repo:
 # https://github.com/0x416c616e/staticsitegenerator
 import time
 import os
 import sys
+# submenus, basically subprograms of their own, are structured as modules to break up the program into multiple files
+# instead of a massive main()
 from modules import article_module
 from modules import settings_module
 from modules import project_module
 from modules import project_class
+# from modules import regeneration_module.py # not here yet
 
 working_project = ""  # the project that is open
 
-# main program entry point
+project_object = project_class.ProjectClass("example")
+
+
 def main():
-    project_object = project_class.ProjectClass("example")
+    # the object for setting/getting project name etc.
+
     # I really should have used argparse instead of my bad DIY method of handling sys.argv stuff
     args_provided = has_command_line_args()
-    fast_mode = True  # turn this off later, the text prompt is useful for new users but annoying for
-                      # me as the developer because it makes running the program take longer
+    fast_mode = True  # turn on for dev, turn off for users
 
-    # what it does at first depends on if there are any cli args/options or not
-    # no args = text menu prompts telling you what you can do, more beginner-friendly
-    # cli args = faster but for more advanced users
+    # run program with no args = text menu prompts telling you what you can do, more beginner-friendly
+    # run program with cli args = faster but for more advanced users
     scoping_hotfix = ""  # bad workaround
     if args_provided:
         scoping_hotfix = arg_steps();
     # end of cli args stuff
-
     # beginning of program entry for no when generator.py is run with no arguments
     if not fast_mode:
         beginning_prompt()  # simple text notice
-    # MAIN START
+    # MAIN PROGRAM START
     menu_check_thing(args_provided, scoping_hotfix)
 
 
@@ -49,18 +46,18 @@ def beginning_prompt():
     print("Only quit with the quit command.")
     time.sleep(5)
 
+
 def arg_steps():
-    # opening by cli args i.e. python generator.py --open some_project
+    # opening by cli args i.e. python generator.py --open some_existing_project
     if ((sys.argv[1] == "--open") or (sys.argv[1] == "-o")) and (len(sys.argv) == 3):
         working_project = sys.argv[2]
         arg_name = sys.argv[2]  # name of project provided as an argument
         # print("you are trying to open an existing project with name: " + arg_name)
         open_project(arg_name)
-    # making a new project via cli args .e. python generator.py --new new_project
+    # making a new project via cli args i.e. python generator.py --new new_project_name
     elif ((sys.argv[1] == "--new") or (sys.argv[1] == "-n")) and (len(sys.argv) == 3):
         working_project = sys.argv[2]
         arg_name = sys.argv[2]
-        # print("you are trying to create a new project with name: " + arg_name)
         create_project(arg_name)
     else:
         print("if you got here it means you provided invalid command line args")
@@ -70,25 +67,20 @@ def arg_steps():
         sys.exit()
     return working_project
 
+
 # attempt to open a project, but checks if it's valid first
 def open_project(project_name):
-    # enter validity check here
-    project_name_is_valid = True  # stub
-    print("TODO: regex/input validation, store in project_name_is_valid")
-    # just check that the project is valid, then eventually proceed to main_project_menu
-    proceed = True
-    working_project = project_name
-    return project_name_is_valid
+    return project_object.validate_name(project_name)
+
 
 # attempt to create a project, check if name is valid and not in use
 def create_project(project_name):
-    # enter validity check here
     project_name_is_valid = True  # stub
-    print("TODO: regex/input validation, store in project_name_is_valid")
     # make new project by copying from template project folder, then proceed to main_project_menu
     proceed = True
     working_project = project_name
-    return project_name_is_valid
+    # the above is stuff in create_project() is cruft from a previous version before I refactored but it might be important?
+    return project_object.make_new_project(project_name)
 
 
 # check if program is being run with command line args

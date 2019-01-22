@@ -9,5 +9,4 @@ def article_menu():
     print("5. Show all article names")
     print("6. Return to main menu")
     print("THIS IS NOT COMPLETE")
-    print("USE A MODULE FOR THE ARTICLE FUNCTIONS")
-    input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
+    #input()  # get rid of this later, this is only a placeholder to stop it from proceeding immediately
