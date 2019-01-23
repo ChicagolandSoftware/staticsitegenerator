@@ -1,9 +1,0 @@
-{
-  "title": "Example article title",
-  "author": "Example Author",
-  "date": "1/17/2019",
-  "first_sentence": "Here is the first sentence that will go beneath the title.",
-  "body_text": "Here is the body text. Maybe later I will have to convert this to an array or something, or somehow escape or find and replace linebreaks or whatever. For the time being, I am doing it in a very simple and dumb way of storing the entire thing as just a continuous string rather than anything more complicated. This might change in the future, but this is a complicated project so I have to keep it simple to start off with.",
-  "lead_image": "placeholder.png",
-  "article_url": "example-article-title"
-}
