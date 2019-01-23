@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/template/html_page_templates/info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/1_article_page.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/2_article_page.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/3_article_page.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/4_article_page.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/5_article_page.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/individual_article.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/json_templates/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/page_json/info.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/page_json/order.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/settings/info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/project_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/project_class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/example_article.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/page_json/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/page_json/index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/page_json/order.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/article_json/info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/settings/about.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/settings/about.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/website_files/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/website_files/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/modules/project_class.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
+              <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
               <folding>
                 <element signature="e#182#212#0" expanded="true" />
               </folding>
@@ -597,7 +577,7 @@
     <entry file="file://$PROJECT_DIR$/modules/project_class.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="55" column="79" selection-start-line="55" selection-start-column="79" selection-end-line="55" selection-end-column="79" />
+          <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
           <folding>
             <element signature="e#182#212#0" expanded="true" />
           </folding>

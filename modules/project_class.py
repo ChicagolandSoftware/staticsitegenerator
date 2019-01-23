@@ -53,7 +53,7 @@ class ProjectClass:
                         print("Successfully created empty parent project folder for " + project_name)
                         print("Proceeding to create subdirs and populate everything from template base")
                         print("This has not been finished. I will revisit it once I finish finalizing all the template files and their JSON contents.")
-                        shutil.copytree('templates', 'projects/' + project_name)
+                        shutil.copytree('template', 'projects/' + project_name)
                     else:
                         print("Unable to create new project. Do you have write permissions? Or some other issue.")
                     # make a new directory within projects/project_name
