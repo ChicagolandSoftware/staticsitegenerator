@@ -1,0 +1,7 @@
+This is where the article submenu will save/delete/read/delete articles, in the form of json.
+
+These should be based on the json_templates file for individual_article.json.
+
+This is for individual articles, not generating pages with multiple previews.
+
+These are for the full articles, including body_text.
