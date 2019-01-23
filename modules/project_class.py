@@ -47,15 +47,15 @@ class ProjectClass:
                     print("Creating new project called " + project_name + "...")
                     # might not have write permissions, in which case, return False
                     # only return true when done with everything
-                    os.mkdir('projects/' + project_name)
+                    # os.mkdir('projects/' + project_name)
                     # attempted to make, but no guarantee of success
-                    if os.path.isdir('projects/' + project_name):
-                        print("Successfully created empty parent project folder for " + project_name)
-                        print("Proceeding to create subdirs and populate everything from template base")
-                        print("This has not been finished. I will revisit it once I finish finalizing all the template files and their JSON contents.")
-                        shutil.copytree('template', 'projects/' + project_name)
-                    else:
-                        print("Unable to create new project. Do you have write permissions? Or some other issue.")
+                    # if os.path.isdir('projects/' + project_name):
+                    print("Successfully created empty parent project folder for " + project_name)
+                    print("Proceeding to create subdirs and populate everything from template base")
+                    print("This has not been finished. I will revisit it once I finish finalizing all the template files and their JSON contents.")
+                    shutil.copytree('template', 'projects/' + project_name)
+                    # else:
+                    #     print("Unable to create new project. Do you have write permissions? Or some other issue.")
                     # make a new directory within projects/project_name
                     # copy contents of template/* and all its files and subdirs to the newly-created projects/project_name directory
                     # then the user needs to do the initial setup ASAP
