@@ -29,7 +29,7 @@ class ProjectClass:
     def make_new_project(self, project_name):
         if self.validate_name(project_name):
             # I pass the arg because it helps me remember what it's doing
-            print("process of making new project goes here")
+            # print("process of making new project goes here")
             # need to check if directory already exists, in which case, don't proceed
             project_exists = os.path.isdir("projects/" + project_name)  # boolean
             # if it doesn't exist, then make a new project
@@ -38,17 +38,37 @@ class ProjectClass:
                 sys.exit()
                 return False
             else:
-                print("That project does not exist yet. Proceeding (unfinished)")
-                return True
-            # testing: use os.path to get current working directory (cwd)
-            # make a new directory within (? not entirely sure of path tbh) ../projects with name _project_name
-            # copy contents of ../template and all its files and subdirs to the newly-created projects/project_name directory
-            # then the user needs to do the initial setup ASAP
-            # but there need to be default values just in case the user hits ctrl+c or something before completing
-            # or set a text file with a boolean in it to say whether or not the setup module was completed
-            # this class needs to import inital_setup_module.py
-            # I also need to finish doing all the JSON stuff, at least for dummy stuff and structure
-            # don't worry about schemas and validation just yet
+                print("That project does not exist yet. Proceeding to project creation.")
+                # this is where the new project creation stuff goes
+                print(os.getcwd())
+                confirmation = input("Are you sure you want to make a new project called " + project_name + "? y / n: ")
+                if confirmation.lower() == 'y' or confirmation.lower() == 'yes':
+                    print("Creating new project called " + project_name + "...")
+                    # might not have write permissions, in which case, return False
+                    # only return true when done with everything
+                    os.mkdir('projects/' + project_name)
+                    # attempted to make, but no guarantee of success
+                    if os.path.isdir('projects/' + project_name):
+                        print("Successfully created empty parent project folder for " + project_name)
+                        print("Proceeding to create subdirs and populate everything from template base")
+                    else:
+                        print("Unable to create new project. Do you have write permissions? Or some other issue.")
+                    # make a new directory within projects/project_name
+                    # copy contents of template/* and all its files and subdirs to the newly-created projects/project_name directory
+                    # then the user needs to do the initial setup ASAP
+                    # but there need to be default values just in case the user hits ctrl+c or something before completing
+                    # or set a text file with a boolean in it to say whether or not the setup module was completed
+                    # this class needs to import inital_setup_module.py
+                    # I also need to finish doing all the JSON stuff, at least for dummy stuff and structure
+                    # don't worry about schemas and validation just yet
+
+                    return True
+                else:
+                    print("Did not end up making a project after all.")
+                    sys.exit()
+                    # if I didn't sys.exit() then it might allow for proceeding with invalid stuff
+                    return False
+
 
 
             return True

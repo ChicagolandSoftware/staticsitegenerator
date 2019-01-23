@@ -153,7 +153,7 @@ def menu_check_thing(args_provided, current_working_project):
             if not project_success:
                 print("Invalid project name, try again.")
             else:
-                print("Creating a new project called " + project_name + " in the projects folder.")
+                print("Created a new project called " + project_name + " in the projects folder.")
                 proceed = True
         else:
             print("Invalid choice. Try again.")
