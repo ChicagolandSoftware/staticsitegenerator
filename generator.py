@@ -66,6 +66,7 @@ def arg_steps():
             sys.exit()
         else:
             pass
+
     # making a new project via cli args i.e. python generator.py --new new_project_name
     elif ((sys.argv[1] == "--new") or (sys.argv[1] == "-n")) and (len(sys.argv) == 3):
         working_project = sys.argv[2]
@@ -94,8 +95,6 @@ def open_project(project_name):
             return True
         else:
             return False
-    # CURRENT TO DO:
-    # CHECK IF THE project_name TO OPEN EVEN EXISTS OR NOT
 
 # attempt to create a project, check if name is valid and not in use
 def create_project(project_name):
@@ -179,6 +178,10 @@ def main_project_menu(project_name, REAL_working_project):
         ACTUAL_project_name = project_name
     else:
         ACTUAL_project_name = REAL_working_project
+
+    project_object.set_project(ACTUAL_project_name)
+    print("opened successfully")
+    print("testing getter for project_class" + str(project_object.get_project()))
 
     print_numbered_menu("second", ACTUAL_project_name)
     second_menu_choice = input("Type a number or the word quit followed by enter: ")

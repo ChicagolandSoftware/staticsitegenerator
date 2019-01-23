@@ -1,0 +1,17 @@
+{
+  "title1": "Example article title 1",
+  "author1": "Example Author",
+  "date1": "1/17/2019",
+  "first_sentence1": "Here is the first sentence that will go beneath the title.",
+  "body_text1": "Here is the body text. Maybe later I will have to convert this to an array or something, or somehow escape or find and replace linebreaks or whatever. For the time being, I am doing it in a very simple and dumb way of storing the entire thing as just a continuous string rather than anything more complicated. This might change in the future, but this is a complicated project so I have to keep it simple to start off with.",
+  "lead_image1": "placeholder.png",
+  "article_url1": "example-article-title1",
+
+  "title2": "Example article title 2",
+  "author2": "Example Author",
+  "date2": "1/17/2019",
+  "first_sentence2": "Here is the first sentence that will go beneath the title.",
+  "body_text2": "Here is the body text. Maybe later I will have to convert this to an array or something, or somehow escape or find and replace linebreaks or whatever. For the time being, I am doing it in a very simple and dumb way of storing the entire thing as just a continuous string rather than anything more complicated. This might change in the future, but this is a complicated project so I have to keep it simple to start off with.",
+  "lead_image2": "placeholder.png",
+  "article_url2": "example-article-title2"
+}

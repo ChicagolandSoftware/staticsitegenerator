@@ -26,6 +26,9 @@ class ProjectClass:
     def set_project(self, project_name):
         self.project_name = project_name
 
+    def get_project(self):
+        return self.project_name
+
     # CURRENT TO-DO
     def make_new_project(self, project_name):
         if self.validate_name(project_name):
