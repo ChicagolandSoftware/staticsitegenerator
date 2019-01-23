@@ -135,7 +135,7 @@ def menu_check_thing(args_provided, current_working_project):
     # proceed means to skip the process of selecting whether to open a project or make a new one
     # if you did the command line args then you already opened something
 
-    while menu_choice != 'quit' and not proceed:  # if args were provided then this does not happen
+    while (menu_choice != 'quit') and (menu_choice != 'q') and (not proceed):  # if args were provided then this does not happen
         if menu_choice == str(1):
             project_name = input("Enter the project name to open: ")
             print("Opening existing project called " + project_name + ".")
@@ -185,7 +185,7 @@ def main_project_menu(project_name, REAL_working_project):
 
     print_numbered_menu("second", ACTUAL_project_name)
     second_menu_choice = input("Type a number or the word quit followed by enter: ")
-    while second_menu_choice != 'quit':
+    while second_menu_choice != 'quit' and second_menu_choice != 'q':
         if second_menu_choice == str(1):
             print_numbered_menu("article", ACTUAL_project_name)
         elif second_menu_choice == str(2):

@@ -1,0 +1,525 @@
+/*   File: site.css
+ * Author: Alan O'Connor
+*/
+
+/* for now I will probably just be using Bootstrap, I think? */
+
+/** {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}*/
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/*footer {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #bbbbbb;
+}*/
+
+/*container {
+    display: block;
+}*/
+
+
+.pagination > * {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+
+#container main div p a {
+  text-decoration: none;
+}
+
+#container main div p a:hover {
+  color:#374785;
+}
+
+
+.investingPageSelection p, .learningPageSelection p, .newsPageSelection p {
+  margin: auto;
+  text-align: center;
+}
+
+#searchField {
+  width: 50%;
+}
+
+
+#loginButton {
+  color: #c9cbd4;
+}
+
+i#loginButton.fa.fa-sign-in {
+  position: relative;
+  top: 3px;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-bottom: 15px;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    /*font-size: 1.3rem;*/
+    line-height: 1.5;
+    background-color: #fafafa;
+    color: #24305e;
+}
+
+main h1 {
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    margin-left: 13%;
+    margin-right: 13%;
+}
+
+main p {
+  font-family: 'Montserrat', sans-serif;
+    padding-bottom: 10px;
+    margin-left: 13%;
+    margin-right: 13%;
+    text-align:justify;
+}
+
+/*.active {
+    color: #4EADFF;
+}*/
+
+
+
+div.authorAndDate {
+  font-style: italic;
+  font-size: 14px;
+}
+
+
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+footer, footer a {
+  font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+    color:#24305e;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer {
+    padding-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fafafa;
+}
+
+footer a:hover, footer a:active, {
+    text-decoration: none;
+    color:#374785;
+}
+
+.fa, .fa:active, .fa:hover {
+    text-decoration: none;
+}
+
+input[type="text"], textarea, textarea:active {
+
+    background-color : #fafafa; 
+  
+  }
+/*social media icons*/
+
+/*.fa-envelope, .fa-envelope:active, .fa-envelope:hover, 
+.fa-google-plus, .fa-google-plus:active, .fa-google-plus:hover,
+.fa-twitter, .fa-twitter:active, .fa-twitter:hover,
+.fa-youtube, .fa-youtube:active, .fa-youtube:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+.fa-REPLACE, .fa-REPLACE:active, .fa-REPLACE:hover,
+ {
+    text-decoration: none;
+}*/
+
+#headerThing {
+    background: #24305e;
+    /*background: linear-gradient(to top, #24305e, #374785);*/    
+    /*uncomment the above line to use a gradient instead of a solid color
+    which looks better? I am not sure*/
+    padding-top: 5px;
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pageTitle {
+    text-align: center;
+}
+
+
+/*button stuff*/
+.btn,
+.btn-primary,
+.btn-primary:visited,
+.btn-success:visited,
+.my-2,.my-sm-0, 
+.btn-primary:hover, .btn-success:hover,
+.btn-success:active,.btn-primary:active,
+.btn-success:focus, .btn-primary:focus, 
+.btn-outline-success, .btn-success
+ {
+    color: #c9cbd4 !important;
+    background-color: #24305e;
+    border-color: #c9cbd4 !important;
+    font-family: 'Montserrat', sans-serif; !important;
+
+}
+
+
+
+.btn-outline-primary:hover {
+    background-color: #374785 !important;
+    border-color: #374785 !important;
+    color: #ffffff !important;
+    font-family: 'Montserrat', sans-serif; !important;
+}
+
+
+
+#loginButton:hover, #loginButton:active{
+  color: #fafafa;
+}
+
+#searchButton {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+/*all the stuff below is just for the navbar, nothing else (well, almost)*/
+
+/*I used this tool for generating the navbar CSS: https://work.smarchal.com/twbscolor/index.php*/
+
+/*additional help for colors:
+http://blog.visme.co/website-color-schemes/
+https://color.adobe.com/
+and also the color picker and colorizer tools in GIMP
+
+
+I used the above tool to generate navbar CSS but then I made a lot of changes to it afterwards
+*/
+
+
+.navbar {
+    background-color: #24305e;
+  }
+  .navbar .navbar-brand {
+    color: #c9cbd4;
+    size: 5px;
+    padding-top: 5px;
+    margin: 0;
+    padding-bottom: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar .navbar-brand:hover,
+  .navbar .navbar-brand:focus {
+    color: #ffffff;
+  }
+  .navbar .navbar-text {
+    color: #c9cbd4;
+  }
+  .navbar .navbar-text a {
+    color: #ffffff;
+  }
+  .navbar .navbar-text a:hover,
+  .navbar .navbar-text a:focus {
+    color: #ffffff; 
+  }
+
+
+
+  .navbar .navbar-nav .nav-link {
+    color: #c9cbd4;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar .navbar-nav .nav-link:not(.disabled):hover,
+  .navbar .navbar-nav .nav-link:not(.disabled):focus {
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  .navbar .navbar-nav .dropdown-menu {
+    background-color: #24305e;
+    border-color: #374785;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item {
+    color: #c9cbd4;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
+  .navbar .navbar-nav .dropdown-menu .dropdown-item.active {
+    color: #ffffff;
+    background-color: #374785;
+  }
+  .navbar .navbar-nav .dropdown-menu .dropdown-divider {
+    border-top-color: #374785;
+
+  }
+  .navbar .navbar-nav .nav-item.active .nav-link,
+  .navbar .navbar-nav .nav-item.active .nav-link:hover,
+  .navbar .navbar-nav .nav-item.active .nav-link:focus,
+  .navbar .navbar-nav .nav-item.show .nav-link,
+  .navbar .navbar-nav .nav-item.show .nav-link:hover,
+  .navbar .navbar-nav .nav-item.show .nav-link:focus, #activeLoginButton {
+    color: #ffffff;
+    background-color: #374785;
+    text-align: center;
+  }
+  .navbar .navbar-toggle {
+    border-color: #374785;
+    text-align: center;
+  }
+  .navbar .navbar-toggle:hover,
+  .navbar .navbar-toggle:focus {
+    background-color: #374785;
+    text-align: center;
+  }
+  .navbar .navbar-toggle .navbar-toggler-icon {
+    color: #c9cbd4;
+    text-align: center;
+  }
+  .navbar .navbar-collapse,
+  .navbar .navbar-form {
+    border-color: #c9cbd4;
+    text-align: center;
+  }
+  .navbar .navbar-link {
+    color: #c9cbd4;
+    text-align: center;
+
+  }
+  .navbar .navbar-link:hover {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  @media (max-width: 575px) {
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+
+  }
+  
+  @media (max-width: 1199px) {
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
+      color: #c9cbd4;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+      color: #ffffff;
+    }
+    .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
+      color: #ffffff;
+      background-color: #374785;
+    }
+  }
+  
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
+    color: #c9cbd4;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
+    color: #ffffff;
+  }
+  .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
+    color: #ffffff;
+    background-color: #374785;
+  }
+
+/*  a.navitem{
+    padding-left: 50px;
+    border: 5px;
+  }*/
+
+.container {
+  background-color: #fafafa;
+}
+
+
+
+/* @media (max-width: 575px) {
+  body{font-size: 14px;}
+}
+
+@media (max-width: 767px) {
+  body{font-size: 16px;}
+}
+
+@media (max-width: 991px) {
+  body{font-size: 18px;}
+}
+
+@media (max-width: 1199px) {
+  body{font-size: 20px;}
+} */
+
+html {
+  font-size: 24px;
+}
+.unbehaved-element {
+  font-size: 2em;
+}
+@media(max-width: 1580px) {
+  html {
+    font-size: 20px;
+  }
+  .unbehaved-element {
+    font-size: 1.9em; /* Fine tune unbehaved elements */
+  }
+}
+@media(max-width: 980px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+#searchField {
+  font-family: 'Montserrat', sans-serif;, FontAwesome;
+  height: 32px;
+  align-content: center;
+  align-items: center;
+}
+
+#searchButtonButton {
+  height: 32px;
+  padding-top: 0.1rem;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+/*
+.searchText {
+}*/
+
+form#searchButton.form-inline.my-2.my-lg-0 {
+  margin: auto;
+  text-align: center;
+  display: inline;
+}
+
+
+
+footer a:hover, footer a:active, footer a:focus {
+  text-decoration:none;
+  color: #374785;
+}
+
+.footerCopyright {
+  font-size: 14px;
+}
+
+#articlePhoto {
+  margin: 0 auto;
+  width: 74%;
+}
+
+.authorAndDate, .articleTitle, .firstSentence {
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.authorAndDate {
+  padding-bottom: 1.2rem;
+}
+
+#activeLoginButton {
+  color: #c9cbd4;
+  border-radius: .25rem;
+  height: 1.8rem;
+}
+
+#activeLoginButton #loginButton {
+  color: #fafafa;
+}
+

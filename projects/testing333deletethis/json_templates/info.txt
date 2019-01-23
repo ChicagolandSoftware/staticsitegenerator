@@ -1,0 +1,6 @@
+This directory contains templates for what certain JSON files should be like.
+
+1_article_page.json is what site preview pages, such as index.html, will show. It is not to be confused with the "full article" pages, which are different.
+
+about_template.json is what the about page should be like.
+

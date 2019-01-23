@@ -1,0 +1,13 @@
+This directory is for the template files that all projects are based on.
+
+When you create a new project, it copies all the template files to a subdirectory in the projects file, with project_name
+as specified from the user.
+
+You can edit templates, if you want. It is not advised that you edit master templates from the template folder.
+
+It is advised to only edit individual project templates within projects/project_name/template
+
+Do not edit the templates unless you know what you are doing.
+
+The template files are combined with the appropriate json files in order to generate the final static site pages,
+which are placed in the website_files folder. Do not upload json or template files to your site. Only website_files.

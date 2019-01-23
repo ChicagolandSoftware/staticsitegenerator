@@ -1,0 +1,3 @@
+For now, there are no JSON schemas or validators. Just assume the JSON files will be properly structured. This kind of assumption can cause problems, but for now, I have too many other features to make for the minimum viable product.
+
+In the future, this is the directory where the schema files will go, for use with pip's jsonschema module. But not until the other aspects of the program are finished first.
