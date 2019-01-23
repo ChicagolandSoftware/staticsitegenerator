@@ -91,6 +91,8 @@ def open_project(project_name):
         return False
     else:
         return True
+    # CURRENT TO DO:
+    # CHECK IF THE project_name TO OPEN EVEN EXISTS OR NOT
 
 # attempt to create a project, check if name is valid and not in use
 def create_project(project_name):

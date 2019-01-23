@@ -1,3 +1,4 @@
+#!usr/bin/env python3
 # this should really be a singleton but I am lazy right now
 # there is supposed to only be once ProjectClass instance for generator.py
 # called project_object
@@ -5,6 +6,8 @@
 import re # regular expression
 import os
 import sys
+
+
 class ProjectClass:
 
     # constructor with default project
