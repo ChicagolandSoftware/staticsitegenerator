@@ -66,6 +66,19 @@ class ProjectClass:
         else:
             print("invalid project_name, unable to check for project check_for_existing_project")
 
+    def prevent_opening_nonexistent_project(self, project_name):
+        # at this point, the way it's being called means it will have already been validated
+        # so you can safely assume project_name is not invalid in terms of length or regex
+        # but what has not been done yet with project_name is seeing if the directory exists or not
+        # this is used with the open_project() function in generator.py
+        if os.path.isdir("projects/" + project_name):
+            print("Successfully opened project " + project_name + ", proceeding.")
+            self.set_project(project_name)
+            return True
+        else:
+            print("Cannot open project " + project_name + " because it does not exist.")
+            return False
+
     def say_guidelines(self):
         print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
         print("Project name guidelines: A-Z, a-z, 0-9, and - ONLY. 2-32 chars.")

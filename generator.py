@@ -87,10 +87,13 @@ def open_project(project_name):
         project_object.say_guidelines()
         sys.exit()
     elif not open_attempt:
-        print("Error with number of args")
+        print("Error with provided arguments")
         return False
     else:
-        return True
+        if project_object.prevent_opening_nonexistent_project(project_name):
+            return True
+        else:
+            return False
     # CURRENT TO DO:
     # CHECK IF THE project_name TO OPEN EVEN EXISTS OR NOT
 
