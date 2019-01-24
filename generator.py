@@ -6,6 +6,7 @@ import os
 import sys
 # submenus, basically subprograms of their own, are structured as modules to break up the program into multiple files
 # instead of a massive main()
+from modules import initial_setup_module
 from modules import article_module
 from modules import settings_module
 from modules import project_module
@@ -155,6 +156,9 @@ def menu_check_thing(args_provided, current_working_project):
             else:
                 print("Created a new project called " + project_name + " in the projects folder.")
                 proceed = True
+        elif menu_choice == 'q' or menu_choice == 'quit':
+            print("Goodbye.")
+            sys.exit()
         else:
             print("Invalid choice. Try again.")
             print("Options menu:")
@@ -206,6 +210,7 @@ def main_project_menu(project_name, REAL_working_project):
 def print_numbered_menu(menu, proj):
     input("Hit enter to continue.")
     clear_terminal()
+    initial_setup_module.check_if_setup_has_been_completed(proj)
     print("Working with open project " + proj)
     print("Options menu: ")
     # second nested menu

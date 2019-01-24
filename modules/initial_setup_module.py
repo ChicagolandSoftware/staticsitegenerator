@@ -3,20 +3,23 @@
 print("this is my highest priority right now, as of 1/23/2019")
 print("this will set up the project after it has been copied using shutil")
 print("after successfully opening a file, then you need to call functions from the initial setup module")
-print("but only if the ")
+print("but only if the projects/project_name/settings/finished_initial_setup.txt file says False")
 
 # stuff to do at first:
 # get input for settings.json and about.json
 
 import json
 
+# THE FUNCTION HANDLERS SHOULD DO TRY/EXCEPT
 
 # setup check is run every time an article is finished
 # if the setup has not been finished, it needs to be done
 # check finished_initial_setup.txt, read string and convert to boolean
 # return the boolean stored in the text file
 def check_if_setup_has_been_completed(project_name):
-    pass
+    with open('projects/' + project_name + '/settings/finished_initial_setup.txt') as setup_file:
+        finished_bool = setup_file.readline()
+        print('content: ' + finished_bool)
 
 
 # get the input for the settings values to be stored in settings.json
