@@ -139,7 +139,10 @@ def menu_check_thing(args_provided, current_working_project):
 
     while (menu_choice != 'quit') and (menu_choice != 'q') and (not proceed):  # if args were provided then this does not happen
         if menu_choice == str(1):
-            project_name = input("Enter the project name to open: ")
+            project_name = input("Enter the project name to open or type quit: ")
+            if project_name == 'q' or project_name == 'quit':
+                print("Goodbye.")
+                sys.exit()
             print("Opening existing project called " + project_name + ".")
             project_success = open_project(project_name)  # returns whether it succeeded or not
             if not project_success:
@@ -210,7 +213,10 @@ def main_project_menu(project_name, REAL_working_project):
 def print_numbered_menu(menu, proj):
     input("Hit enter to continue.")
     clear_terminal()
-    initial_setup_module.check_if_setup_has_been_completed(proj)
+    if initial_setup_module.check_if_setup_has_been_completed(proj):
+        print("you have already completed the initial setup")
+    else:
+        print("(NOT FINISHED) this is where the function calls to do the initial setup will go")
     print("Working with open project " + proj)
     print("Options menu: ")
     # second nested menu

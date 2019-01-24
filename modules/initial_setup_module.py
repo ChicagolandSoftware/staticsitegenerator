@@ -20,7 +20,7 @@ def check_if_setup_has_been_completed(project_name):
     with open('projects/' + project_name + '/settings/finished_initial_setup.txt') as setup_file:
         finished_bool = setup_file.readline()
         print('content: ' + finished_bool)
-
+        return eval(finished_bool)  # string to bool, True = finished the setup already, False = never done the setup
 
 # get the input for the settings values to be stored in settings.json
 # return a dictionary -- if it failed, return a blank dictionary
