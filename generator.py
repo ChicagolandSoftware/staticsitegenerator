@@ -217,6 +217,7 @@ def print_numbered_menu(menu, proj):
         print("you have already completed the initial setup")
     else:
         print("(NOT FINISHED) this is where the function calls to do the initial setup will go")
+        initial_setup_module.get_settings_input(proj)
     print("Working with open project " + proj)
     print("Options menu: ")
     # second nested menu
