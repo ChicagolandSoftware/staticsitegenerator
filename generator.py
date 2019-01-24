@@ -12,11 +12,12 @@ from modules import project_module
 from modules import project_class
 # from modules import regeneration_module.py # not here yet
 
+
 working_project = ""  # the project that is open
 
 project_object = project_class.ProjectClass("example")
 
-
+# "driver" of the program, uses other classes and modules
 def main():
     # the object for setting/getting project name etc.
 
