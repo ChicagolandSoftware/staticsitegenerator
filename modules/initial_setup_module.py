@@ -27,7 +27,7 @@ def check_if_setup_has_been_completed(project_name):
 
 
 # get the input for the settings values to be stored in settings.json
-# return a dictionary -- if it failed, return a blank dictionary
+# return a dictionary
 def get_settings_input():
     settings_dictionary = {}  # this dictionary corresponds with settings.json
     print("TO-DO: regex/input validation/try/except")
@@ -42,7 +42,7 @@ def get_settings_input():
     return settings_dictionary
 
 # get the input for the about values to be stored in about.json
-# return a dictionary -- if it failed, return a blank dictionary
+# return a dictionary
 def get_about_input():
     about_dictionary = {}
     print("the partially-completed get_about_input(project_name) function")
@@ -67,4 +67,12 @@ def write_about_json(project_name, about_dictionary):
 # overwrite (not append) finished_initial_setup.txt with "True"
 # return True if it worked, or False if it failed
 def mark_setup_as_complete(project_name):
-    pass
+    try:
+        file_reading = open('projects/' + project_name + '/settings/finished_initial_setup.txt', 'r')
+        lines_from_file = file_reading.readlines()
+        file_reading.close()  # gets all of the contents out and then saves as blank file to remove previous contents
+        with open('projects/' + project_name + '/settings/finished_initial_setup.txt', 'w') as write_file:
+            write_file.write('True')
+    except IOError:
+        print("Error: failed to mark setup as complete, might cause project issues")
+        sys.exit()
