@@ -46,7 +46,6 @@ def get_settings_input():
 def get_about_input():
     about_dictionary = {}
     print("the partially-completed get_about_input(project_name) function")
-    about_dictionary['static_website_name'] = input("Enter a name for your static site: ")
     about_dictionary['about_text'] = input("Enter a description for your site for the \'about\' page: ")
     return about_dictionary
 
