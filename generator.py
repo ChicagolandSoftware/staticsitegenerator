@@ -220,6 +220,7 @@ def print_numbered_menu(menu, proj):
         print("(NOT FINISHED) this is where the function calls to do the initial setup will go")
         settings_dictionary = initial_setup_module.get_settings_input()
         about_dictionary = initial_setup_module.get_about_input()
+        initial_setup_module.write_settings_json(proj, settings_dictionary)
         initial_setup_module.mark_setup_as_complete(proj)
 
 

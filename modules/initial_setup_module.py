@@ -54,8 +54,12 @@ def get_about_input():
 # write the values to the proper key-value pairs in settings.json
 # return True if it worked, or False if it failed
 def write_settings_json(project_name, settings_dictionary):
-    pass
-
+    try:
+        with open('projects/' + project_name + '/settings/settings.json', 'w') as json_file:
+            json.dump(settings_dictionary, json_file)
+    except IOError:
+        print("Error: failed to write to settings.json")
+        sys.exit()
 
 # take project name and settings dictionary args
 # write the values to the proper key-value pairs in settings.json
