@@ -61,11 +61,17 @@ def write_settings_json(project_name, settings_dictionary):
         print("Error: failed to write to settings.json")
         sys.exit()
 
+
 # take project name and settings dictionary args
 # write the values to the proper key-value pairs in settings.json
 # return True if it worked, or False if it failed
 def write_about_json(project_name, about_dictionary):
-    pass
+    try:
+        with open('projects/' + project_name + '/settings/about.json', 'w') as json_file:
+            json.dump(about_dictionary, json_file)
+    except IOError:
+        print("Error: failed to write to about.json")
+        sys.exit()
 
 
 # overwrite (not append) finished_initial_setup.txt with "True"
