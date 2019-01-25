@@ -42,9 +42,7 @@ class ProjectClass:
                 sys.exit()
                 return False
             else:
-                print("That project does not exist yet. Proceeding to project creation.")
                 # this is where the new project creation stuff goes
-                print(os.getcwd())
                 confirmation = input("Are you sure you want to make a new project called " + project_name + "? y / n: ")
                 if confirmation.lower() == 'y' or confirmation.lower() == 'yes':
                     print("Creating new project called " + project_name + "...")
@@ -53,10 +51,11 @@ class ProjectClass:
                     # os.mkdir('projects/' + project_name)
                     # attempted to make, but no guarantee of success
                     # if os.path.isdir('projects/' + project_name):
-                    print("Successfully created empty parent project folder for " + project_name)
-                    print("Proceeding to create subdirs and populate everything from template base")
-                    print("This has not been finished. I will revisit it once I finish finalizing all the template files and their JSON contents.")
-                    shutil.copytree('template', 'projects/' + project_name)
+                    try:
+                        shutil.copytree('template', 'projects/' + project_name)
+                    except IOError:
+                        print("IOError encountered when trying to create project " + project_name)
+                        sys.exit()
                     # else:
                     #     print("Unable to create new project. Do you have write permissions? Or some other issue.")
                     # make a new directory within projects/project_name

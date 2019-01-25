@@ -189,8 +189,7 @@ def main_project_menu(project_name, REAL_working_project):
         ACTUAL_project_name = REAL_working_project
 
     project_object.set_project(ACTUAL_project_name)
-    print("opened successfully")
-    print("testing getter for project_class" + str(project_object.get_project()))
+
 
     print_numbered_menu("second", ACTUAL_project_name)
     second_menu_choice = input("Type a number or the word quit followed by enter: ")
@@ -215,15 +214,16 @@ def print_numbered_menu(menu, proj):
     input("Hit enter to continue.")
     clear_terminal()
     if initial_setup_module.check_if_setup_has_been_completed(proj):
-        print("you have already completed the initial setup")
+        # print("you have already completed the initial setup")
+        pass
     else:
-        print("(NOT FINISHED) this is where the function calls to do the initial setup will go")
-        settings_dictionary = initial_setup_module.get_settings_input()
+        # do the initial setup
+        settings_dictionary = initial_setup_module.get_settings_input(proj)
         about_dictionary = initial_setup_module.get_about_input()
         initial_setup_module.write_settings_json(proj, settings_dictionary)
         initial_setup_module.write_about_json(proj, about_dictionary)
+        # setup has been completed
         initial_setup_module.mark_setup_as_complete(proj)
-
 
     print("Working with open project " + proj)
     print("Options menu: ")
