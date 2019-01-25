@@ -28,8 +28,8 @@ def check_if_setup_has_been_completed(project_name):
 
 # get the input for the settings values to be stored in settings.json
 # return a dictionary -- if it failed, return a blank dictionary
-def get_settings_input(project_name):
-    settings_dictionary = {} # this dictionary corresponds with settings.json
+def get_settings_input():
+    settings_dictionary = {}  # this dictionary corresponds with settings.json
     print("TO-DO: regex/input validation/try/except")
     print("Initializing new project. You can always change these settings later if need be.")
     settings_dictionary['github_link'] = input("Enter a GitHub account name or hit enter to leave blank (optional): ")
@@ -39,11 +39,16 @@ def get_settings_input(project_name):
     settings_dictionary['logo_filename'] = input("Enter a custom logo file name or leave blank for default (optional): ")
     print("this is not finished yet")
     print(settings_dictionary)
+    return settings_dictionary
 
 # get the input for the about values to be stored in about.json
 # return a dictionary -- if it failed, return a blank dictionary
-def get_about_input(project_name):
-    pass
+def get_about_input():
+    about_dictionary = {}
+    print("the partially-completed get_about_input(project_name) function")
+    about_dictionary['static_website_name'] = input("Enter a name for your static site: ")
+    about_dictionary['about_text'] = input("Enter a description for your site for the \'about\' page: ")
+    return about_dictionary
 
 
 # take project name and settings dictionary args

@@ -178,6 +178,7 @@ def menu_check_thing(args_provided, current_working_project):
         else:
             print("what happened?")
 
+
 # you only get here after a project is open
 # if a new project is created, it is opened
 def main_project_menu(project_name, REAL_working_project):
@@ -217,7 +218,11 @@ def print_numbered_menu(menu, proj):
         print("you have already completed the initial setup")
     else:
         print("(NOT FINISHED) this is where the function calls to do the initial setup will go")
-        initial_setup_module.get_settings_input(proj)
+        settings_dictionary = initial_setup_module.get_settings_input()
+        about_dictionary = initial_setup_module.get_about_input()
+
+
+
     print("Working with open project " + proj)
     print("Options menu: ")
     # second nested menu
