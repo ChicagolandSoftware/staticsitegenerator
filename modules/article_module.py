@@ -2,6 +2,7 @@
 # the article submenu
 import os
 import sys
+import platform
 
 def article_menu():
     print("1. Create an article")
@@ -31,10 +32,17 @@ def update_article(project_object):
     article_name = input("Enter the name of an article to edit: ")
     if (os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json')):
         try:
-            print("TODO: make versions for macOS and Linux, or just check for the OS (currently windows-only)")
-            print("Hit enter when you are done.")
-            windows_command = "notepad.exe " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
-            os.system(windows_command)
+            operating_system = platform.system()
+            if operating_system == 'Windows':
+                windows_command = "notepad.exe " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
+                os.system(windows_command)
+            elif operating_system == 'Darwin':
+                print("mac version goes here")
+            elif operating_system == 'Linux':
+                print("Linux version goes here")
+            else:
+                print("Unable to detect your OS.\nYou will have to manually edit projects/" +
+                      project_object.get_project() + "/article_json/" + article_name + '.json')
         except IOError:
             print("Error: failed to open " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json')
             sys.exit()

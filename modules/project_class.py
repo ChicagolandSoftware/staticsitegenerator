@@ -115,7 +115,7 @@ class ProjectClass:
 
     def say_guidelines(self):
         print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
-        print("Project name guidelines: A-Z, a-z, 0-9, and - ONLY. 2-32 chars.")
+        print("Project name guidelines: A-Z, a-z, 0-9, and _ ONLY. 2-32 chars.")
 
     def validate_name(self, project_name):
         unallowed_words = {'quit', 'template', 'testing', 'test', '-o', '-n',
