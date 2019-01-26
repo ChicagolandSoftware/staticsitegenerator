@@ -125,6 +125,7 @@ def has_command_line_args():
 def menu_check_thing(args_provided, current_working_project):
     # at this point, the project may or may not be set yet
     menu_choice = ""
+    project_object.clear_terminal()
     if not args_provided:
         print("Options menu:")
         print("1. Open an existing project")
@@ -212,7 +213,7 @@ def main_project_menu(project_name, REAL_working_project):
 
 def print_numbered_menu(menu, proj):
     input("Hit enter to continue.")
-    clear_terminal()
+    project_object.clear_terminal()
     if initial_setup_module.check_if_setup_has_been_completed(proj):
         # print("you have already completed the initial setup")
         pass
@@ -225,8 +226,7 @@ def print_numbered_menu(menu, proj):
         # setup has been completed
         initial_setup_module.mark_setup_as_complete(proj)
 
-    print("Working with open project " + proj)
-    print("Options menu: ")
+    project_object.top_prompt(proj)
     # second nested menu
     if menu == "second":
         print("1. Article menu")
@@ -235,6 +235,34 @@ def print_numbered_menu(menu, proj):
     # third menu
     elif menu == "article":
         article_module.article_menu()
+        article_menu_choice = input("Type a number to do something, or type quit to quit: ")
+        if (article_menu_choice.lower() == 'quit') or (article_menu_choice.lower() == 'q'):
+            print("Goodbye. ")
+            sys.exit()
+        else:
+            while article_menu_choice != str(6):
+                project_object.clear_terminal()
+                project_object.top_prompt(project_object.get_project())
+                if article_menu_choice == str(1):
+                    article_module.create_article(project_object)
+                elif article_menu_choice == str(2):
+                    article_module.read_article(project_object)
+                elif article_menu_choice == str(3):
+                    article_module.update_article(project_object)
+                elif article_menu_choice == str(4):
+                    article_module.delete_article(project_object)
+                elif article_menu_choice == str(5):
+                    article_module.show_all_articles(project_object)
+                else:
+                    print("Invalid choice. Try again.")
+                    input("Hit enter to continue.")
+                    project_object.clear_terminal()
+                    project_object.top_prompt(project_object.get_project())
+                article_module.article_menu()
+                article_menu_choice = input("Type a number to do something, or type quit to quit: ")
+                if (article_menu_choice.lower() == 'quit') or (article_menu_choice.lower() == 'q'):
+                    print("Goodbye. ")
+                    sys.exit()
     elif menu == "settings":
         settings_module.settings_menu()
     elif menu == "project":
@@ -244,12 +272,5 @@ def print_numbered_menu(menu, proj):
 
 
 
-def clear_terminal():
-    if os.name == "nt":  # windows
-        os.system("cls")
-    else:
-        os.system("clear")
-
 if __name__ == '__main__':
     main()
-

@@ -29,7 +29,16 @@ class ProjectClass:
     def get_project(self):
         return self.project_name
 
-    # CURRENT TO-DO
+    def clear_terminal(self):
+        if os.name == "nt":  # windows
+            os.system("cls")
+        else:
+            os.system("clear")
+
+    def top_prompt(self, project_name):
+        print("Working with open project " + project_name)
+        print("Options menu: ")
+
     def make_new_project(self, project_name):
         if self.validate_name(project_name):
             # I pass the arg because it helps me remember what it's doing
