@@ -28,7 +28,6 @@ def read_article(project_object):
 def update_article(project_object):
     project_object.clear_terminal()
     print("Updating an existing article: " + project_object.get_project())
-    print("TODO: check that article exists before attempting to open it")
     article_name = input("Enter the name of an article to edit: ")
     if (os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json')):
         try:
@@ -40,7 +39,6 @@ def update_article(project_object):
                 mac_command = "open -a TextEdit " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
                 os.system(mac_command)
             elif operating_system == 'Linux':
-                print("Linux version goes here")
                 linux_command = "gedit " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
                 os.system(linux_command)
             else:
