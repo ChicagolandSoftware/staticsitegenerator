@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # the article submenu
-
+import os
+import sys
 
 def article_menu():
     print("1. Create an article")
@@ -26,6 +27,19 @@ def read_article(project_object):
 def update_article(project_object):
     project_object.clear_terminal()
     print("Updating an existing article: " + project_object.get_project())
+    print("TODO: check that article exists before attempting to open it")
+    article_name = input("Enter the name of an article to edit: ")
+    if (os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json')):
+        try:
+            print("TODO: make versions for macOS and Linux, or just check for the OS (currently windows-only)")
+            print("Hit enter when you are done.")
+            windows_command = "notepad.exe " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
+            os.system(windows_command)
+        except IOError:
+            print("Error: failed to open " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json')
+            sys.exit()
+    else:
+        print("Error: invalid article name.")
     clear_and_prompt(project_object)
 
 
