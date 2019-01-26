@@ -40,6 +40,8 @@ def update_article(project_object):
             sys.exit()
     else:
         print("Error: invalid article name.")
+        input()
+    input()
     clear_and_prompt(project_object)
 
 
