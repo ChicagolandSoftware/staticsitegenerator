@@ -40,6 +40,8 @@ def update_article(project_object):
                 print("mac version goes here")
             elif operating_system == 'Linux':
                 print("Linux version goes here")
+                linux_command = "gedit " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
+                os.system(linux_command)
             else:
                 print("Unable to detect your OS.\nYou will have to manually edit projects/" +
                       project_object.get_project() + "/article_json/" + article_name + '.json')
@@ -68,6 +70,6 @@ def return_to_main_menu():
 
 
 def clear_and_prompt(project_object):
-    input()
+    input("Press enter to continue.")
     project_object.clear_terminal()
     project_object.top_prompt(project_object.get_project())
