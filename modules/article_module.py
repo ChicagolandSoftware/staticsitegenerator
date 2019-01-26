@@ -37,7 +37,8 @@ def update_article(project_object):
                 windows_command = "notepad.exe " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
                 os.system(windows_command)
             elif operating_system == 'Darwin':
-                print("mac version goes here")
+                mac_command = "open -a TextEdit " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
+                os.system(mac_command)
             elif operating_system == 'Linux':
                 print("Linux version goes here")
                 linux_command = "gedit " + "projects/" + project_object.get_project() + '/article_json/' + article_name + '.json'
