@@ -3,6 +3,8 @@
 import os
 import sys
 import platform
+import json
+
 
 def article_menu():
     print("1. Create an article")
@@ -15,7 +17,61 @@ def article_menu():
 
 def create_article(project_object):
     project_object.clear_terminal()
-    print("Creating a new article: " + project_object.get_project())
+    # 0: ask user for article name
+    print("Creating new article...")
+    print("Although your article title can be something like Here's My Cool Article, your article url")
+    print("needs to be something like heres_my_cool_article, with no spaces or special characters.")
+    print("Uppercase, lowercase, numbers, and underscore only.")
+    initial_article_url = input("Enter a url for the article: ")
+    # 1: regex to see if article name is valid
+    if project_object.validate_name(initial_article_url):
+        # 2: check if article already exists
+        if initial_article_url in open('projects/' + project_object.get_project() + '/settings/articles.txt').read():
+            print("The article already exists! You will have to use a different name, or delete or rename the existing one.")
+        else:
+            print("do the remaining article stuff here")
+            article_dictionary = {}
+            # 3: prompt user to enter info for article
+            #   - articles need the following:
+            #       - title, author, date, first_sentence, body_text, lead_image, article_url
+            article_dictionary['title'] = input("Enter a title for the article (can contain spaces and punctuation): ")
+            article_dictionary['author'] = input("Enter an author for the article: ")
+            article_dictionary['date'] = input("Enter a date for the article (DD/MM/YYYY): ")
+            print("to-do: validate date input")
+            article_dictionary['first_sentence'] = input("Enter the first sentence for the article: ")
+            #           - body_text should be multi-line while loop, quit on quit/q
+            #               - put <br> after every line gotten from user
+            body_input = ""
+            print("Enter the body text. It can be multiple lines.")
+            print("To designate that you're finished with entering the body text, type quit or q on a separate line.")
+            final_body_string = ""
+            while body_input.lower() != 'quit' and body_input.lower() != 'q':
+                body_input = input()
+                if (body_input.lower() != 'quit') and (body_input.lower() != 'q'):
+                    final_body_string += body_input
+                    final_body_string += "<br>"
+            print("Finished with body text input.")
+            article_dictionary['body_text'] = final_body_string
+            article_dictionary['lead_image'] = input("Enter a lead image (must be in the images folder of your project): ")
+            article_dictionary['article_url'] = initial_article_url
+            print(article_dictionary)
+            # 4: convert to article_name.json in projects/project_name/article_json/article_name.json
+            with open('projects/' + project_object.get_project() + '/article_json/' + initial_article_url + '.json', 'w') as article_file:
+                json.dump(article_dictionary, article_file)
+            # 5: put article_url in projects/project_name/settings/articles.txt
+            with open('projects/' + project_object.get_project() + '/settings/articles.txt', 'a') as article_file:
+                article_file.write("\n" + initial_article_url)
+            # 6: read count.txt and then add 1 to it
+            article_count = 0
+            with open('projects/' + project_object.get_project() + '/settings/count.txt', 'r') as count_file:
+                article_count = count_file.readline()
+            article_count = int(article_count) + 1
+            with open('projects/' + project_object.get_project() + '/settings/count.txt', 'w') as count_file:
+                count_file.write(str(article_count))
+            print("Finished making new article.")
+    else:
+        print("Invalid article name.")
+
     clear_and_prompt(project_object)
 
 
@@ -26,6 +82,9 @@ def read_article(project_object):
 
 
 def update_article(project_object):
+    print("need to get the filename of the actual .json file and then compare it to the filename key's value")
+    print("cache that, then after it gets saved, run a different function to check and make sure that")
+    print("if it was changed, the filename also gets automatically changed to what it's supposed to be")
     project_object.clear_terminal()
     print("Updating an existing article: " + project_object.get_project())
     article_name = input("Enter the name of an article to edit: ")

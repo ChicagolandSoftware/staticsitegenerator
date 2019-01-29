@@ -18,6 +18,7 @@ working_project = ""  # the project that is open
 
 project_object = project_class.ProjectClass("example")
 
+
 # "driver" of the program, uses other classes and modules
 def main():
     # the object for setting/getting project name etc.
@@ -97,6 +98,7 @@ def open_project(project_name):
             return True
         else:
             return False
+
 
 # attempt to create a project, check if name is valid and not in use
 def create_project(project_name):
@@ -271,6 +273,9 @@ def print_numbered_menu(menu, proj):
         print("Invalid choice. Try again.")
 
 
-
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nQuitting. Goodbye.")
+        sys.exit()
