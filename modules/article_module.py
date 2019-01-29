@@ -77,7 +77,17 @@ def create_article(project_object):
 
 def read_article(project_object):
     project_object.clear_terminal()
-    print("Reading an existing article: " + project_object.get_project())
+    reading_choice = input("Choose an article to read: ")
+    if reading_choice in open('projects/' + project_object.get_project() + '/settings/articles.txt').read():
+        print("Title: " + ())
+        print("Author: " + ())
+        print("Date: " + ())
+        print("First sentence: ")
+        print("Body text: ")
+        print("Lead image: ")
+        print("Article URL: ")
+    else:
+        print("unable to find article " + reading_choice)
     clear_and_prompt(project_object)
 
 
