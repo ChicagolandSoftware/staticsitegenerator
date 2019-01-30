@@ -37,10 +37,15 @@ class ProjectClass:
         else:
             os.system("clear")
 
-    @staticmethod
-    def top_prompt(project_name):
-        print("Working with open project " + project_name)
+    # for top-level menu prompts, like the main menu or main article menu (not sub-items)
+    def top_prompt(self, project_name):
+        self.sub_prompt(project_name)
         print("Options menu: ")
+
+    # for sub-menu prompts, such as sub-options within the article menu
+    @staticmethod
+    def sub_prompt(project_name):
+        print("Working with open project " + project_name)
 
     def make_new_project(self, project_name):
         if self.validate_name(project_name):

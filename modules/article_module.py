@@ -18,6 +18,7 @@ def article_menu():
 def create_article(project_object):
     project_object.clear_terminal()
     # 0: ask user for article name
+    project_object.sub_prompt(project_object.get_project())
     print("Creating new article...")
     print("Although your article title can be something like Here's My Cool Article, your article url")
     print("needs to be something like heres_my_cool_article, with no spaces or special characters.")
@@ -77,6 +78,7 @@ def create_article(project_object):
 
 def read_article(project_object):
     project_object.clear_terminal()
+    project_object.sub_prompt(project_object.get_project())
     reading_choice = input("Choose an article to read: ")
     file_path = 'projects/' + project_object.get_project() + '/article_json/' + reading_choice + '.json'
     if reading_choice in open('projects/' + project_object.get_project() + '/settings/articles.txt').read()\
@@ -98,11 +100,8 @@ def read_article(project_object):
 
 
 def update_article(project_object):
-    print("need to get the filename of the actual .json file and then compare it to the filename key's value")
-    print("cache that, then after it gets saved, run a different function to check and make sure that")
-    print("if it was changed, the filename also gets automatically changed to what it's supposed to be")
     project_object.clear_terminal()
-    print("Updating an existing article: " + project_object.get_project())
+    project_object.sub_prompt(project_object.get_project())
     article_name = input("Enter the name of an article to edit: ")
     if os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json'):
         try:
@@ -130,17 +129,20 @@ def update_article(project_object):
 
 def delete_article(project_object):
     project_object.clear_terminal()
-    print("Deleting an existing article: " + project_object.get_project())
+    project_object.sub_prompt(project_object.get_project())
+    print("Deleting an existing article NOT FINISHED")
     clear_and_prompt(project_object)
 
 
 def show_all_articles(project_object):
-    print("showing all articles")
+    project_object.clear_terminal()
+    project_object.sub_prompt(project_object.get_project())
+    print("showing all articles NOT FINISHED")
     clear_and_prompt(project_object)
 
 
 def return_to_main_menu():
-    print("returning to main menu")
+    print("Returning to main menu.")
 
 
 def clear_and_prompt(project_object):
