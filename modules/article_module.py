@@ -146,6 +146,7 @@ def delete_article(project_object):
                     article_count = int(article_count) - 1
                     with open('projects/' + project_object.get_project() + '/settings/count.txt', 'w') as count_file:
                         count_file.write(str(article_count))
+                    # UPDATE: THE ARTICLE REMOVAL DOES NOT WORK RIGHT NOW
                     # 3. remove from articles.txt
                         # opens articles.txt, reads lines into var
                     articles_tracker = open('projects/' + project_object.get_project() + '/settings/articles.txt', 'r')
