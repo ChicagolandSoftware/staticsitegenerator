@@ -101,9 +101,9 @@ def read_article(project_object):
 def update_article(project_object):
     project_object.clear_terminal()
     project_object.sub_prompt(project_object.get_project())
-    print("note: this needs to check if the user changed the filename")
-    print("or perhaps rename has to be a different function, \n"
-          "or maybe get the filename out of the json and only leave it as the filename")
+    # print("note: this needs to check if the user changed the filename")
+    # print("or perhaps rename has to be a different function, \n"
+    #       "or maybe get the filename out of the json and only leave it as the filename")
     article_name = input("Enter the name of an article to edit: ")
     if os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json'):
         try:
@@ -137,17 +137,31 @@ def delete_article(project_object):
         deletion_confirmation = input("Are you sure you want to delete " + article_name + "? y / n: ")
         if deletion_confirmation.lower() == 'y' or deletion_confirmation.lower() == 'yes':
             if os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json'):
-                print("got to this part")
                 # 1. delete article.json file
-                os.remove('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json')
-                # 2. decrement count.txt
-                with open('projects/' + project_object.get_project() + '/settings/count.txt', 'r') as count_file:
-                    article_count = count_file.readline()
-                article_count = int(article_count) - 1
-                with open('projects/' + project_object.get_project() + '/settings/count.txt', 'w') as count_file:
-                    count_file.write(str(article_count))
-                # 3. remove from articles.txt
-
+                try:
+                    os.remove('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json')
+                    # 2. decrement count.txt
+                    with open('projects/' + project_object.get_project() + '/settings/count.txt', 'r') as count_file:
+                        article_count = count_file.readline()
+                    article_count = int(article_count) - 1
+                    with open('projects/' + project_object.get_project() + '/settings/count.txt', 'w') as count_file:
+                        count_file.write(str(article_count))
+                    # 3. remove from articles.txt
+                        # opens articles.txt, reads lines into var
+                    articles_tracker = open('projects/' + project_object.get_project() + '/settings/articles.txt', 'r')
+                    old_article_list = articles_tracker.readlines()
+                    articles_tracker.close()
+                    # part 3 continued
+                        # articles.txt is now empty
+                        # now write everything except the deleted article title
+                    articles_tracker = open('projects/' + project_object.get_project() + '/settings/articles.txt', 'w')
+                    for title_line in old_article_list:
+                        if title_line !=  (article_name + "\n"):
+                            articles_tracker.write(title_line)
+                except IOError:
+                    print("IOError encountered when attempting to delete article.")
+                    sys.exit()
+                print("Deleted the article called " + article_name + ".")
             else:
                 print("Error: there is no article by that name.")
         else:
