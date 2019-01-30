@@ -174,8 +174,12 @@ def delete_article(project_object):
 def show_all_articles(project_object):
     project_object.clear_terminal()
     project_object.sub_prompt(project_object.get_project())
-    print("showing all articles NOT FINISHED")
-    print("there are COUNT articles in total:")
+    number_of_articles = 0
+    with open('projects/' + project_object.get_project() + '/settings/count.txt', 'r') as count_file:
+        number_of_articles = count_file.read()
+    print("there are {} articles in total:".format(str(number_of_articles)))
+    with open('projects/' + project_object.get_project() + '/settings/articles.txt', 'r') as article_title_file:
+        print(article_title_file.read())
     clear_and_prompt(project_object)
 
 

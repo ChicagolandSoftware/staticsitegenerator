@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/modules/article_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/article_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/settings/articles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/template/settings/articles.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,14 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/article_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+            <state relative-caret-position="463">
+              <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
               <folding>
                 <element signature="e#45#54#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/template/settings/articles.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -109,7 +119,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/template/settings/settings.json" />
         <option value="$PROJECT_DIR$/testing/find_and_replace_IO_test.py" />
-        <option value="$PROJECT_DIR$/template/settings/articles.txt" />
         <option value="$PROJECT_DIR$/template/settings/count.txt" />
         <option value="$PROJECT_DIR$/template/info.txt" />
         <option value="$PROJECT_DIR$/template/settings/info.txt" />
@@ -124,6 +133,7 @@
         <option value="$PROJECT_DIR$/projects/jsontest/settings/count.txt" />
         <option value="$PROJECT_DIR$/projects/jsontest/settings/articles.txt" />
         <option value="$PROJECT_DIR$/modules/article_module.py" />
+        <option value="$PROJECT_DIR$/template/settings/articles.txt" />
       </list>
     </option>
   </component>
@@ -157,33 +167,19 @@
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="deletetest" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="deletetest" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="article_json" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="deletetest" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
               <item name="settings" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="template" type="462c0819:PsiDirectoryNode" />
-              <item name="article_json" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,13 +314,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/page_json/info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/json_templates/1_article_page.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -593,11 +582,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/article_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="119" column="17" lean-forward="true" selection-start-line="119" selection-start-column="17" selection-end-line="119" selection-end-column="17" />
+        <state relative-caret-position="463">
+          <caret line="181" column="40" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="40" />
           <folding>
             <element signature="e#45#54#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/settings/articles.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
         </state>
       </provider>
     </entry>
