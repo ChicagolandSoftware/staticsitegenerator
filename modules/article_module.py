@@ -146,19 +146,8 @@ def delete_article(project_object):
                     article_count = int(article_count) - 1
                     with open('projects/' + project_object.get_project() + '/settings/count.txt', 'w') as count_file:
                         count_file.write(str(article_count))
-                    # UPDATE: THE ARTICLE REMOVAL DOES NOT WORK RIGHT NOW
                     # 3. remove from articles.txt
-                        # opens articles.txt, reads lines into var
-                    articles_tracker = open('projects/' + project_object.get_project() + '/settings/articles.txt', 'r')
-                    old_article_list = articles_tracker.readlines()
-                    articles_tracker.close()
-                    # part 3 continued
-                        # articles.txt is now empty
-                        # now write everything except the deleted article title
-                    articles_tracker = open('projects/' + project_object.get_project() + '/settings/articles.txt', 'w')
-                    for title_line in old_article_list:
-                        if title_line !=  (article_name + "\n"):
-                            articles_tracker.write(title_line)
+                    print("I deleted the old buggy version and now I have to redo it")
                 except IOError:
                     print("IOError encountered when attempting to delete article.")
                     sys.exit()
@@ -180,7 +169,9 @@ def show_all_articles(project_object):
         number_of_articles = count_file.read()
     print("there are {} articles in total:".format(str(number_of_articles)))
     with open('projects/' + project_object.get_project() + '/settings/articles.txt', 'r') as article_title_file:
-        print(article_title_file.read())
+        for line in article_title_file.readlines():
+            if not line == '\n':
+                print(line)
     clear_and_prompt(project_object)
 
 
