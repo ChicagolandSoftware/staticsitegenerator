@@ -78,16 +78,22 @@ def create_article(project_object):
 def read_article(project_object):
     project_object.clear_terminal()
     reading_choice = input("Choose an article to read: ")
-    if reading_choice in open('projects/' + project_object.get_project() + '/settings/articles.txt').read():
-        print("Title: " + ())
-        print("Author: " + ())
-        print("Date: " + ())
-        print("First sentence: ")
-        print("Body text: ")
-        print("Lead image: ")
-        print("Article URL: ")
+    file_path = 'projects/' + project_object.get_project() + '/article_json/' + reading_choice + '.json'
+    if reading_choice in open('projects/' + project_object.get_project() + '/settings/articles.txt').read()\
+            and os.path.isfile(file_path):
+        json_dict = {}
+        with open(file_path) as article_file:
+            json_dict = json.load(article_file)
+
+        print("Title: " + json_dict["title"])
+        print("Author: " + json_dict["author"])
+        print("Date: " + json_dict["date"])
+        print("First sentence: " + json_dict["first_sentence"])
+        print("Body text: " + json_dict["body_text"])
+        print("Lead image: " + json_dict["lead_image"])
+        print("Article URL: " + json_dict["article_url"])
     else:
-        print("unable to find article " + reading_choice)
+        print("Error: unable to find article " + reading_choice)
     clear_and_prompt(project_object)
 
 
@@ -98,7 +104,7 @@ def update_article(project_object):
     project_object.clear_terminal()
     print("Updating an existing article: " + project_object.get_project())
     article_name = input("Enter the name of an article to edit: ")
-    if (os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json')):
+    if os.path.exists('projects/' + project_object.get_project() + '/article_json/' + article_name + '.json'):
         try:
             operating_system = platform.system()
             if operating_system == 'Windows':

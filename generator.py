@@ -38,7 +38,7 @@ def main():
             print("python3 generator.py --new some_new_project")
             sys.exit()
         else:
-            scoping_hotfix = arg_steps();
+            scoping_hotfix = arg_steps()
     # end of cli args stuff
     # beginning of program entry for no when generator.py is run with no arguments
     if not fast_mode:
@@ -208,7 +208,6 @@ def main_project_menu(project_name, REAL_working_project):
             print_numbered_menu("second", ACTUAL_project_name)
         print_numbered_menu("second", ACTUAL_project_name)
         second_menu_choice = input("Type a number to do something, or type quit to quit: ")
-
 
     print("Goodbye.")
 
