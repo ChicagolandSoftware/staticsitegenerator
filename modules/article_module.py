@@ -60,7 +60,7 @@ def create_article(project_object):
                 json.dump(article_dictionary, article_file)
             # 5: put article_url in projects/project_name/settings/articles.txt
             with open('projects/' + project_object.get_project() + '/settings/articles.txt', 'a') as article_file:
-                article_file.write("\n" + initial_article_url)
+                article_file.write("\n\n" + initial_article_url + "\n\n")
             # 6: read count.txt and then add 1 to it
             article_count = 0
             with open('projects/' + project_object.get_project() + '/settings/count.txt', 'r') as count_file:
@@ -147,7 +147,14 @@ def delete_article(project_object):
                     with open('projects/' + project_object.get_project() + '/settings/count.txt', 'w') as count_file:
                         count_file.write(str(article_count))
                     # 3. remove from articles.txt
-                    print("I deleted the old buggy version and now I have to redo it")
+                    f = open('projects/' + project_object.get_project() + '/settings/articles.txt', "r+")
+                    d = f.readlines()
+                    f.seek(0)
+                    for i in d:
+                        if str(i).replace("\n", "") != str(article_name).replace("\n", ""):
+                            f.write(i)
+                    f.truncate()
+                    f.close()
                 except IOError:
                     print("IOError encountered when attempting to delete article.")
                     sys.exit()
@@ -170,7 +177,7 @@ def show_all_articles(project_object):
     print("there are {} articles in total:".format(str(number_of_articles)))
     with open('projects/' + project_object.get_project() + '/settings/articles.txt', 'r') as article_title_file:
         for line in article_title_file.readlines():
-            if not line == '\n':
+            if line != '\n':
                 print(line)
     clear_and_prompt(project_object)
 
