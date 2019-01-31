@@ -39,6 +39,7 @@ def get_settings_input(project_name):
 
     return settings_dictionary
 
+
 # get the input for the about values to be stored in about.json
 # return a dictionary
 def get_about_input():

@@ -1,1 +1,1 @@
-example-article-title
+example_article

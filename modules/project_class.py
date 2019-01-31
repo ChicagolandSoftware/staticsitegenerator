@@ -29,7 +29,24 @@ class ProjectClass:
     def get_project(self):
         return self.project_name
 
-    # CURRENT TO-DO
+    # static method decorator
+    @staticmethod
+    def clear_terminal():
+        if os.name == "nt":  # windows
+            os.system("cls")
+        else:
+            os.system("clear")
+
+    # for top-level menu prompts, like the main menu or main article menu (not sub-items)
+    def top_prompt(self, project_name):
+        self.sub_prompt(project_name)
+        print("Options menu: ")
+
+    # for sub-menu prompts, such as sub-options within the article menu
+    @staticmethod
+    def sub_prompt(project_name):
+        print("Working with open project " + project_name)
+
     def make_new_project(self, project_name):
         if self.validate_name(project_name):
             # I pass the arg because it helps me remember what it's doing
@@ -81,6 +98,7 @@ class ProjectClass:
             print("invalid project_name, unable to make new project")
             return False
 
+    # this is an unfinished method and I think it might be unused
     def check_for_existing_project(self, project_name):
         if self.validate_name(project_name):
             print("name is valid, but now need to check if it already exists")
@@ -104,9 +122,10 @@ class ProjectClass:
             print("Cannot open project " + project_name + " because it does not exist.")
             return False
 
-    def say_guidelines(self):
-        print("project_name is invalid, try again with proper characters and length, and avoid reserved words")
-        print("Project name guidelines: A-Z, a-z, 0-9, and - ONLY. 2-32 chars.")
+    @staticmethod
+    def say_guidelines():
+        print("Name is invalid, try again with proper characters and length, and avoid reserved words")
+        print("Name guidelines: A-Z, a-z, 0-9, and _ ONLY. 2-32 chars.")
 
     def validate_name(self, project_name):
         unallowed_words = {'quit', 'template', 'testing', 'test', '-o', '-n',
