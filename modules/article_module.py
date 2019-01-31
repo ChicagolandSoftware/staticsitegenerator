@@ -130,6 +130,7 @@ def update_article(project_object):
 
 
 def delete_article(project_object):
+    print("testing branch stuff")
     project_object.clear_terminal()
     project_object.sub_prompt(project_object.get_project())
     article_name = input("Enter the name of the article you want to delete: ")
