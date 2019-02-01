@@ -7,6 +7,8 @@
       <change beforePath="$PROJECT_DIR$/template/html_page_templates/3_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/3_articles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/html_page_templates/4_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/4_articles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/html_page_templates/5_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/5_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/html_page_templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,10 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template/html_page_templates/5_articles.html">
+        <entry file="file://$PROJECT_DIR$/template/html_page_templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+            <state relative-caret-position="619">
+              <caret line="131" column="114" selection-start-line="131" selection-start-column="114" selection-end-line="131" selection-end-column="114" />
             </state>
           </provider>
         </entry>
@@ -37,7 +39,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>already</find>
       <find>open</find>
       <find>path</find>
       <find>did not end</find>
@@ -67,6 +68,7 @@
       <find>project_object</find>
       <find>enter a descr</find>
       <find>ARTICLE_AUTHOR</find>
+      <find>Alan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testing/InputFiles/file2.txt" />
         <option value="$PROJECT_DIR$/testing/InputFiles/testing_ground.html" />
         <option value="$PROJECT_DIR$/project_class" />
         <option value="$PROJECT_DIR$/project_class.py" />
@@ -119,13 +120,14 @@
         <option value="$PROJECT_DIR$/modules/settings_module.py" />
         <option value="$PROJECT_DIR$/modules/initial_setup_module.py" />
         <option value="$PROJECT_DIR$/generator.py" />
-        <option value="$PROJECT_DIR$/template/html_page_templates/article.html" />
-        <option value="$PROJECT_DIR$/template/html_page_templates/index.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/1_article.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/2_articles.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/3_articles.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/4_articles.html" />
         <option value="$PROJECT_DIR$/template/html_page_templates/5_articles.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/about.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/article.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/index.html" />
       </list>
     </option>
   </component>
@@ -145,16 +147,6 @@
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
               <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="staticsitegenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="staticsitegenerator" type="b2602c69:ProjectViewProjectNode" />
@@ -420,16 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/about.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="65" column="53" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/settings_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -437,45 +419,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/3_articles.html">
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/1_article.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="258">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/html_page_templates/2_articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        <state relative-caret-position="619">
+          <caret line="102" column="114" selection-start-line="102" selection-start-column="114" selection-end-line="102" selection-end-column="114" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/1_article.html">
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/3_articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        <state relative-caret-position="619">
+          <caret line="112" column="114" selection-start-line="112" selection-start-column="114" selection-end-line="112" selection-end-column="114" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/html_page_templates/4_articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+        <state relative-caret-position="641">
+          <caret line="123" column="18" lean-forward="true" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/html_page_templates/5_articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+        <state relative-caret-position="619">
+          <caret line="131" column="114" selection-start-line="131" selection-start-column="114" selection-end-line="131" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="73" column="114" selection-start-line="73" selection-start-column="114" selection-end-line="73" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="84" column="58" lean-forward="true" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="131" column="114" selection-start-line="131" selection-start-column="114" selection-end-line="131" selection-end-column="114" />
         </state>
       </provider>
     </entry>
