@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/template/html_page_templates/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/1_article.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/1_article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/2_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/2_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/3_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/3_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/4_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/4_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/5_articles.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/5_articles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/html_page_templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/html_page_templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,77 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/article_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3498">
-              <caret line="159" column="11" selection-start-line="159" selection-start-column="11" selection-end-line="159" selection-end-column="11" />
-              <folding>
-                <element signature="e#45#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/settings_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/html_page_templates/1_article.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/template/html_page_templates/article.html">
+        <entry file="file://$PROJECT_DIR$/template/html_page_templates/5_articles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/initial_setup_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/project_class.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-              <folding>
-                <element signature="e#182#212#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="279" column="28" selection-start-line="279" selection-start-column="28" selection-end-line="279" selection-end-column="28" />
-              <folding>
-                <element signature="e#106#117#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="633">
+              <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -98,7 +37,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>make_new</find>
       <find>already</find>
       <find>open</find>
       <find>path</find>
@@ -128,6 +66,7 @@
       <find>sub_prompt</find>
       <find>project_object</find>
       <find>enter a descr</find>
+      <find>ARTICLE_AUTHOR</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,12 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/template/html_page_templates/4_articles.html" />
-        <option value="$PROJECT_DIR$/template/html_page_templates/3_articles.html" />
-        <option value="$PROJECT_DIR$/template/html_page_templates/2_articles.html" />
-        <option value="$PROJECT_DIR$/modules/regeneration_module.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/testing/InputFiles/file1.txt" />
         <option value="$PROJECT_DIR$/testing/InputFiles/file2.txt" />
         <option value="$PROJECT_DIR$/testing/InputFiles/testing_ground.html" />
         <option value="$PROJECT_DIR$/project_class" />
@@ -187,6 +120,12 @@
         <option value="$PROJECT_DIR$/modules/initial_setup_module.py" />
         <option value="$PROJECT_DIR$/generator.py" />
         <option value="$PROJECT_DIR$/template/html_page_templates/article.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/index.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/1_article.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/2_articles.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/3_articles.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/4_articles.html" />
+        <option value="$PROJECT_DIR$/template/html_page_templates/5_articles.html" />
       </list>
     </option>
   </component>
@@ -375,36 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2458" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/5_articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2442" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/4_articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2260" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/3_articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/2_articles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1820" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/html_page_templates/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11020" />
@@ -511,6 +420,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/about.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="65" column="53" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/settings_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -518,17 +437,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/1_article.html">
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/3_articles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="308">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/html_page_templates/article.html">
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/2_articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/1_article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="57" column="26" lean-forward="true" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/4_articles.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
-          <caret line="72" column="12" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/html_page_templates/5_articles.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
         </state>
       </provider>
     </entry>
