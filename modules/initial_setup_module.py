@@ -1,5 +1,6 @@
 import json
 import sys
+from modules import project_class
 # the initial setup module, used for getting basic info about the project
 # then writing it to json
 # stuff to do at first:
@@ -45,6 +46,8 @@ def get_settings_input(project_name):
 def get_about_input():
     about_dictionary = {}
     about_dictionary['about_text'] = input("Enter a description for your site for the \'about\' page: ")
+    temp_project_object = project_class.ProjectClass("example")
+    temp_project_object.clear_terminal()
     return about_dictionary
 
 

@@ -266,13 +266,11 @@ def print_numbered_menu(menu, proj):
                     sys.exit()
     elif menu == "settings":
         settings_module.settings_menu()
-        print("AAAAAAAAAAAAA")
         settings_menu_choice = input("Type a number to do something, or type quit to quit: ")
         if (settings_menu_choice.lower() == 'quit') or (settings_menu_choice.lower() == 'q'):
             print("Goodbye. ")
             sys.exit()
         else:
-            print("this is where the numbered stuff goes")
             while settings_menu_choice != str(5):
                 project_object.clear_terminal()
                 project_object.top_prompt(project_object.get_project())
