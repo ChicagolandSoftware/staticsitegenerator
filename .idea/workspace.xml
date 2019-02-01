@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4428a70-a62d-43d6-ab84-336114b7981e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/settings_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/settings_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/project_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/project_module.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/settings_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="242">
+              <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/project_module.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -107,7 +115,6 @@
         <option value="$PROJECT_DIR$/project_class" />
         <option value="$PROJECT_DIR$/project_class.py" />
         <option value="$PROJECT_DIR$/__init__.py" />
-        <option value="$PROJECT_DIR$/modules/project_module.py" />
         <option value="$PROJECT_DIR$/template/page_json_templates/3_article_page.json" />
         <option value="$PROJECT_DIR$/template/page_json_templates/1_article_page.json" />
         <option value="$PROJECT_DIR$/template/page_json_templates/2_article_page.json" />
@@ -146,6 +153,7 @@
         <option value="$PROJECT_DIR$/modules/article_module.py" />
         <option value="$PROJECT_DIR$/template/article_json/example_article.json" />
         <option value="$PROJECT_DIR$/modules/settings_module.py" />
+        <option value="$PROJECT_DIR$/modules/project_module.py" />
       </list>
     </option>
   </component>
@@ -407,9 +415,6 @@
     <entry file="file://$PROJECT_DIR$/modules/regeneration_module.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/project_module.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/initial_setup_module.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="902">
@@ -478,8 +483,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/settings_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="242">
+          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/project_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
