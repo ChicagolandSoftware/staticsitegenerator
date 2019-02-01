@@ -266,8 +266,37 @@ def print_numbered_menu(menu, proj):
                     sys.exit()
     elif menu == "settings":
         settings_module.settings_menu()
+        print("AAAAAAAAAAAAA")
+        settings_menu_choice = input("Type a number to do something, or type quit to quit: ")
+        if (settings_menu_choice.lower() == 'quit') or (settings_menu_choice.lower() == 'q'):
+            print("Goodbye. ")
+            sys.exit()
+        else:
+            print("this is where the numbered stuff goes")
+            while settings_menu_choice != str(5):
+                project_object.clear_terminal()
+                project_object.top_prompt(project_object.get_project())
+                if settings_menu_choice == str(1):
+                    settings_module.about_page_menu(project_object)
+                elif settings_menu_choice == str(2):
+                    settings_module.social_media_menu(project_object)
+                elif settings_menu_choice == str(3):
+                    settings_module.website_title_menu(project_object)
+                elif settings_menu_choice == str(4):
+                    settings_module.logo_menu(project_object)
+                else:
+                    print("Invalid choice. Try again.")
+                    input("Hit enter to continue.")
+                    project_object.clear_terminal()
+                    project_object.top_prompt(project_object.get_project())
+                settings_module.settings_menu()
+                settings_menu_choice = input("Type a number to do something, or type quit to quit: ")
+                if (settings_menu_choice.lower() == 'quit') or (settings_menu_choice.lower() == 'q'):
+                    print("Goodbye. ")
+                    sys.exit()
     elif menu == "project":
         project_module.project_menu()
+        input("this is my input() equivalent to a breakpoint")
     else:
         print("Invalid choice. Try again.")
 
